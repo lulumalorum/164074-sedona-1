@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+        <a href="index.html"><img class="logo" src="img" height="83" width="103" alt="logo-small"></a>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <a class="main-nav__toogle">Открыть меню</a>
+          <div class="main-nav__wrapper">
+            <a class="main-nav__cancel">Закрыть меню</a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a>Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">HTML academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <h1 class="page-title">
+        Sedona
+      </h1>
+      <div class="page-welcomemessage">
+        <div class="page-welcomemessage__title">
+          Оставьте свой отзыв
+        </div>
+        <p class="page-welcomemessage__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form class="page-form" action="#" method="get">
+        <fieldset>
+          <div class="page-formblock">
+            <span class="page-formblock__title">Представьтесь, пожалуйста</span>
+            <label class="page-formblock__label" for="name">Имя</label>
+            <input class="page-formblock__field  page-formblock__field--superlong" type="text" name="firstname" id="name" value="Петр">
+            <label class="page-formblock__label" for="lstname">Имя</label>
+            <input class="page-formblock__field  page-formblock__field" type="text" name="lastname" id="lstname" value="Иванов">
+            <label class="page-formblock__label" for="fthrname">Имя</label>
+            <input class="page-formblock__field  page-formblock__field" type="text" name="fathername" id="fthrname" value="Александрович">
+          </div>
+          <div class="page-formblock">
+            <span class="page-formblock__title">Контактная информация:</span>
+            <label class="page-formblock__label" for="tel">Контактный телефон:</label>
+            <input class="page-formblock__field  page-formblock__field--long" type="tel" name="phonenumber" id="tel" value="Введите телефон">
+            <img class="page-formblock__icon page-formblock__icon--tel" src="img" height="58" width="58" alt="tel">
+            <label class="page-formblock__label" for="mail">Электронная почта:</label>
+            <input class="page-formblock__field  page-formblock__field--long" type="email" name="email" id="mail" value="Введите e-mail">
+            <img class="page-formblock__icon page-formblock__icon--email" src="img" height="58" width="58" alt="email">
+          </div>
+          <div class="page-formblock">
+            <span class="page-formblock__title">Ваше общее впечатление:</span>
+            <input class="page-formblock__radiobutton  page-formblock__radiobutton--checked" type="radio" name="option1" id="op1" value="positive" checked>
+            <label class="page-formblock__label" for="op1">Скорее положительноей</label>
+            <input class="page-formblock__radiobutton" type="radio" name="option2" id="op2" value="negative">
+            <label class="page-formblock__label" for="op2">Скорее отрицательное</label>
+            <input class="page-formblock__radiobutton" type="radio" name="option3" id="op3" value="neutral">
+            <label class="page-formblock__label" for="op2">Затрудняюсь ответить</label>
+          </div>
+          <div class="page-formblock">
+            <span class="page-formblock__title">Посещенные достопримечательности:</span>
+            <input class="page-formblock__checkbox  page-formblock__checkbox--checked" type="checkbox" name="option4" id="op4" value="bridge" checked>
+            <label class="page-formblock__label" for="op4">Мост Дьявола</label>
+            <input class="page-formblock__checkbox" type="checkbox" name="option5" id="op5" value="park" checked>
+            <label class="page-formblock__label" for="op5">Слайд-парк</label>
+            <input class="page-formblock__checkbox" type="checkbox" name="option6" id="op6" value="mountain">
+            <label class="page-formblock__label" for="op6">Гора-колокол</label>
+            <input class="page-formblock__checkbox" type="checkbox" name="option67" id="op7" value="rock" checked>
+            <label class="page-formblock__label" for="op7">Красные скалы</label>
+          </div>
+          <div class="page-formblock">
+            <span class="page-formblock__title">Опишите свои эмоции:</span>
+            <textarea class="page-formblock__textarea" name="text">Опишите подробно все свои восторги</textarea>
+          </div>
+          <button class="page-form__btn" type="submit">Отправить отзыв</button>
+        </fieldset>
+      </form>
+      <footer class="page-footer">
+        <a class="page-footer__visit" href="#">#Visitsedona</a>
+        <div class="page-social">
+          <a class="page-social__icon  page-social_icon--twitter" herf="#">Twitter</a>
+          <a class="page-social__icon  page-social_icon--fb" herf="#">Facebook</a>
+          <a class="page-social__icon  page-social_icon--youtube" herf="#">Youtube</a>
+        </div>
+        <span class="page-footer__developers">Разработано</span>
+        <a class="page-footer__imgdevelopers" href="#"></a>
+      </footer>
+    </div>
+  </body>
+</html>
