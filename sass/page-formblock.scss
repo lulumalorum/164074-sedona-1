@@ -1,0 +1,69 @@
+.page-formblock{
+
+}
+.page-formblock__title{
+  width: 298px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 27px;
+  margin-top: 22px;
+}
+.page-formblock__group{
+  display: block;
+}
+.page-formblock__group2{
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+.page-formblock__field{
+  min-height: 56px;
+  display: inline-block;
+  padding-left: 16px;
+  margin-bottom: 21px;
+  background-color: $gray;
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  width: 190px;
+}
+.page-formblock__field--superlong{
+  width: 222px;
+}
+.page-formblock__label{
+  margin-right:10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+}
+.page-formblock__icon{
+  position: absolute;
+  top:0px;
+  left: 205px;
+}
+.page-formblock__label--long{
+  margin-left: 30px;
+}
+.page-formblock__label--bold{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.page-formblock__textarea{
+  width: 266px;
+  margin-left: 5px;
+  background: $gray;
+  border: none;
+  min-height: 160px;
+  padding-top: 18px;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+}

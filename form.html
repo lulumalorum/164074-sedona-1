@@ -8,7 +8,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a href="index.html"><img class="logo" src="img" height="83" width="103" alt="logo-small"></a>
+        <a href="index.html"><img class="page-logo" src="img" height="83" width="103" alt="logo-small"></a>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
           <a class="main-nav__toogle">Открыть меню</a>
           <div class="main-nav__wrapper">
@@ -43,41 +43,64 @@
         <fieldset>
           <div class="page-formblock">
             <span class="page-formblock__title">Представьтесь, пожалуйста</span>
-            <label class="page-formblock__label" for="name">Имя</label>
-            <input class="page-formblock__field  page-formblock__field--superlong" type="text" name="firstname" id="name" value="Петр">
-            <label class="page-formblock__label" for="lstname">Имя</label>
-            <input class="page-formblock__field  page-formblock__field" type="text" name="lastname" id="lstname" value="Иванов">
-            <label class="page-formblock__label" for="fthrname">Имя</label>
-            <input class="page-formblock__field  page-formblock__field" type="text" name="fathername" id="fthrname" value="Александрович">
+            <div class="page-formblock__group">
+              <label class="page-formblock__label" for="name">Имя</label>
+              <input class="page-formblock__field  page-formblock__field--superlong" type="text" name="firstname" id="name" value="Петр">
+            </div>
+            <div class="page-formblock__group">
+              <label class="page-formblock__label" for="lstname">Фамилия</label>
+              <input class="page-formblock__field  page-formblock__field" type="text" name="lastname" id="lstname" value="Иванов">
+            </div>
+            <div class="page-formblock__group">
+              <label class="page-formblock__label" for="fthrname">Отчество</label>
+              <input class="page-formblock__field  page-formblock__field" type="text" name="fathername" id="fthrname" value="Александрович">
+            </div>
           </div>
           <div class="page-formblock">
             <span class="page-formblock__title">Контактная информация:</span>
-            <label class="page-formblock__label" for="tel">Контактный телефон:</label>
-            <input class="page-formblock__field  page-formblock__field--long" type="tel" name="phonenumber" id="tel" value="Введите телефон">
-            <img class="page-formblock__icon page-formblock__icon--tel" src="img" height="58" width="58" alt="tel">
-            <label class="page-formblock__label" for="mail">Электронная почта:</label>
-            <input class="page-formblock__field  page-formblock__field--long" type="email" name="email" id="mail" value="Введите e-mail">
-            <img class="page-formblock__icon page-formblock__icon--email" src="img" height="58" width="58" alt="email">
+            <label class="page-formblock__label  page-formblock__label--long" for="tel">Контактный телефон:</label>
+            <div class="page-formblock__group2">
+              <input class="page-formblock__field  page-formblock__field--long" type="tel" name="phonenumber" id="tel" value="Введите телефон">
+              <img class="page-formblock__icon page-formblock__icon--tel" src="img" height="58" width="58" alt="tel">
+            </div>
+            <label class="page-formblock__label  page-formblock__label--long" for="mail">Электронная почта:</label>
+            <div class="page-formblock__group2">
+              <input class="page-formblock__field  page-formblock__field--long" type="email" name="email" id="mail" value="Введите e-mail">
+              <img class="page-formblock__icon  page-formblock__icon--email" src="img" height="58" width="58" alt="email">
           </div>
           <div class="page-formblock">
             <span class="page-formblock__title">Ваше общее впечатление:</span>
-            <input class="page-formblock__radiobutton  page-formblock__radiobutton--checked" type="radio" name="option1" id="op1" value="positive" checked>
-            <label class="page-formblock__label" for="op1">Скорее положительноей</label>
-            <input class="page-formblock__radiobutton" type="radio" name="option2" id="op2" value="negative">
-            <label class="page-formblock__label" for="op2">Скорее отрицательное</label>
-            <input class="page-formblock__radiobutton" type="radio" name="option3" id="op3" value="neutral">
-            <label class="page-formblock__label" for="op3">Затрудняюсь ответить</label>
+            <div class="page-formblock__group">
+              <input class="page-formblock__radiobutton  page-formblock__radiobutton--checked" type="radio" name="option1" id="op1" value="positive" checked>
+              <label class="page-formblock__label  page-formblock__label--bold" for="op1">Скорее положительноей</label>
+            </div>
+            <div class="page-formblock__group">
+              <input class="page-formblock__radiobutton" type="radio" name="option2" id="op2" value="negative">
+              <label class="page-formblock__label  page-formblock__label--bold" for="op2">Скорее отрицательное</label>
+            </div>
+            <div class="page-formblock__group">
+              <input class="page-formblock__radiobutton" type="radio" name="option3" id="op3" value="neutral">
+              <label class="page-formblock__label  page-formblock__label--bold" for="op3">Затрудняюсь ответить</label>
+            </div>
           </div>
           <div class="page-formblock">
             <span class="page-formblock__title">Посещенные достопримечательности:</span>
-            <input class="page-formblock__checkbox  page-formblock__checkbox--checked" type="checkbox" name="option4" id="op4" value="bridge" checked>
-            <label class="page-formblock__label" for="op4">Мост Дьявола</label>
-            <input class="page-formblock__checkbox" type="checkbox" name="option5" id="op5" value="park" checked>
-            <label class="page-formblock__label" for="op5">Слайд-парк</label>
-            <input class="page-formblock__checkbox" type="checkbox" name="option6" id="op6" value="mountain">
-            <label class="page-formblock__label" for="op6">Гора-колокол</label>
-            <input class="page-formblock__checkbox" type="checkbox" name="option7" id="op7" value="rock" checked>
-            <label class="page-formblock__label" for="op7">Красные скалы</label>
+            <div class="page-formblock__group">
+              <input class="page-formblock__checkbox  page-formblock__checkbox--checked" type="checkbox" name="option4" id="op4" value="bridge" checked>
+              <label class="page-formblock__label page-formblock__label--bold" for="op4">Мост Дьявола</label>
+            </div>
+            <div class="page-formblock__group">
+              <input class="page-formblock__checkbox" type="checkbox" name="option5" id="op5" value="park" checked>
+              <label class="page-formblock__label page-formblock__label--bold" for="op5">Слайд-парк</label>
+            </div>
+            <div class="page-formblock__group">
+              <input class="page-formblock__checkbox" type="checkbox" name="option6" id="op6" value="mountain">
+              <label class="page-formblock__label page-formblock__label--bold" for="op6">Гора-колокол</label>
+            </div>
+            <div class="page-formblock__group">
+              <input class="page-formblock__checkbox" type="checkbox" name="option7" id="op7" value="rock" checked>
+              <label class="page-formblock__label page-formblock__label--bold" for="op7">Красные скалы</label>
+            </div>
           </div>
           <div class="page-formblock">
             <span class="page-formblock__title">Опишите свои эмоции:</span>
