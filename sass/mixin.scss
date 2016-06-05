@@ -1,0 +1,18 @@
+@mixin clearfix{
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin mobile($min-height){
+  min-height: 320px;
+}
+@mixin tablet($min-height) {
+  min-height: 720px;
+}
+@mixin desctop($min-height) {
+  min-height: 1200px;
+}
