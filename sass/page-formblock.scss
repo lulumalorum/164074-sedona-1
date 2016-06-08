@@ -1,7 +1,4 @@
-.page-formblock{
-
-}
-.page-formblock__title{
+.page-formblock__title {
   width: 298px;
   margin: auto;
   font-size: 18px;
@@ -14,15 +11,15 @@
   margin-bottom: 27px;
   margin-top: 22px;
 }
-.page-formblock__group{
+.page-formblock__group {
   display: block;
 }
-.page-formblock__group2{
+.page-formblock__group2 {
   position: relative;
   display: inline-block;
   margin-left: 20px;
 }
-.page-formblock__field{
+.page-formblock__field {
   min-height: 56px;
   display: inline-block;
   padding-left: 16px;
@@ -34,28 +31,28 @@
   font-weight: bold;
   width: 190px;
 }
-.page-formblock__field--superlong{
+.page-formblock__field--superlong {
   width: 222px;
 }
-.page-formblock__label{
-  margin-right:10px;
+.page-formblock__label {
+  margin-right: 10px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
 }
-.page-formblock__icon{
+.page-formblock__icon {
   position: absolute;
-  top:0px;
+  top: 0;
   left: 205px;
 }
-.page-formblock__label--long{
+.page-formblock__label--long {
   margin-left: 30px;
 }
-.page-formblock__label--bold{
+.page-formblock__label--bold {
   font-weight: bold;
   text-transform: capitalize;
 }
-.page-formblock__textarea{
+.page-formblock__textarea {
   width: 266px;
   margin-left: 5px;
   background: $gray;
@@ -66,4 +63,22 @@
   font-size: 16px;
   line-height: 26px;
   font-weight: bold;
+}
+fieldset{
+  border-style: hidden;
+}
+.page-formblock__icon{
+  min-width: 58px;
+  min-height: 58px;
+  background-color: $darkgray;
+}
+.page-formblock__icon--tel{
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-formblock__icon--email{
+  background-image: url(../img/icon-mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }

@@ -1,40 +1,40 @@
-.page-features{
+.page-features {
   color: white;
   text-transform: uppercase;
   background: $blue;
   text-align: center;
   padding-top: 56px;
   padding-bottom: 50px;
+  position: relative;
 }
-.page-features__name{
+.page-features__name {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 18px;
-  color:$black;
+  color: $black;
 }
-.page-features__name--white{
-  color:white;
+.page-features__name--white {
+  color: white;
 }
-.page-features__number{
+.page-features__number {
   font-size: 14px;
   line-height: 21px;
   color: $black;
 }
-.page-features__number--white
-{
-  color:white;
+.page-features__number--white {
+  color: white;
 }
-.page-features__text{
+.page-features__text {
   margin-top: 23px;
   font-size: 14px;
   line-height: 21px;
-  color:$black;
+  color: $black;
 }
-.page-features__text--white{
-  color:white;
+.page-features__text--white {
+  color: $white;
 }
-.page-features--withicon{
+.page-features--withicon {
   background-color: white;
   padding: 0;
   text-align: left;
@@ -42,6 +42,24 @@
   padding-top: 40px;
   margin: 0;
 }
-.page-features--gray{
+.page-features__icon {
+  position: absolute;
+  min-width: 40px;
+  margin-left:-52px;
+  margin-top: -5px;
+}
+.page-features__icon--burger {
+  background-image: url("../img/icon-burger.svg");
+  min-height: 35px;
+}
+.page-features__icon--home {
+  background-image: url("../img/icon-house.svg");
+  min-height: 38px;
+}
+.page-features__icon--souvenir {
+  background-image: url("../img/icon-gift.svg");
+  min-height: 38px;
+}
+.page-features--gray {
   background-color: $gray;
 }

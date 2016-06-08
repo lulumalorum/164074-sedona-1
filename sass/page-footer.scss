@@ -1,23 +1,22 @@
-.page-footer{
+.page-footer {
   margin-top: 40px;
   display: block;
   text-align: center;
-  a{
+  a {
     text-decoration: none;
-    color:$black;
+    color: $black;
   }
 }
-.page-footer__visit{
+.page-footer__visit {
   font-size: 21px;
   line-height: 26px;
-  text-weight:bold;
+  text-weight: bold;
   text-transform: uppercase;
-
 }
-.page-footer__developers{
+.page-footer__developers {
   font-size: 14px;
   text-transform: uppercase;
 }
-.page-footer__imgdevelopers{
+.page-footer__imgdevelopers {
   text-transform: uppercase;
 }
