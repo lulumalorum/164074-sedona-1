@@ -5,3 +5,9 @@
     clear: both;
   }
 }
+@mixin container {
+  position: relative;
+  width: 320px;
+  margin: auto;
+  background-color: #fff;
+}

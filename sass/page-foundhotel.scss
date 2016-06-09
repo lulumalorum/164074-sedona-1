@@ -1,4 +1,5 @@
 .page-foundhotel {
+  @include conteiner;
   background-color: $blue;
   width: 277px;
   margin: auto;
