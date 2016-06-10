@@ -1,0 +1,41 @@
+.page-footer {
+  @include conteiner;
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+.page-footer__visit {
+  font-size: 21px;
+  line-height: 26px;
+  text-weight: bold;
+  text-transform: uppercase;
+}
+.page-footer__developers {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 74px;
+  min-height: 39px;
+  padding-top: 15px;
+  margin-right: 20px;
+  vertical-align: bottom;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.page-footer__imgdevelopers {
+  text-transform: uppercase;
+  min-height: 49px;
+  width: 46px;
+  display: inline-block;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  span {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+.page-foundhotel {
+  @include conteiner;
+  background-color: $blue;
+  width: 277px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  margin-bottom: 50px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}

@@ -1,0 +1,21 @@
+.page-interests {
+  @include conteiner;
+  color: $black;
+  text-transform: uppercase;
+  background: $white;
+  text-align: center;
+  margin-top: 31px;
+  margin-bottom: 40px;
+}
+.page-interests__name {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 31px;
+}
+.page-intersts__text {
+  font-size: 14px;
+  line-height: 24px;
+  width: 280px;
+  margin: auto;
+}

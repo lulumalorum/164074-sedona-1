@@ -1,26 +1,27 @@
-@media (min-width: 768px){
+@media (min-width: 768px) {
+  @include conteiner;
   width: 640px;
-  .logo {
+  .page-logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
+  @include conteiner;
   width: 960px;
-  .logo {
+  .page-logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
 }
-@media (min-width: 340px){
-  width: 960px;
-  .logo {
+@media (min-width: 320px) {
+  .page-logo {
+    @include conteiner;
     position: absolute;
-    top: 400px;
     left: 50%;
     transform: translateX(-50%);
-
+    z-index: 5;
   }
 }
