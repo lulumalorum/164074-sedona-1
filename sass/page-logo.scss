@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-  @include conteiner;
+  @include container(768px);
   width: 640px;
   .page-logo {
     position: absolute;
@@ -8,7 +8,7 @@
   }
 }
 @media (min-width: 1200px) {
-  @include conteiner;
+  @include container(1200px);
   width: 960px;
   .page-logo {
     position: absolute;
@@ -18,7 +18,7 @@
 }
 @media (min-width: 320px) {
   .page-logo {
-    @include conteiner;
+    @include container(320px);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

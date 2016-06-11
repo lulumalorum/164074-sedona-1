@@ -1,17 +1,44 @@
-.page-foundhotel {
-  @include conteiner;
-  background-color: $blue;
-  width: 277px;
-  margin: auto;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  margin-bottom: 50px;
-  a {
-    text-decoration: none;
-    color: white;
+@media (min-width: 320px){
+  .page-foundhotel {
+    @include container(320px);
+    background-color: $white;
+    padding-bottom: 41px;
+  }
+  .page-foundhotel__button{
+    background-color: $blue;
+    width: 277px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+      a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+@media (min-width: 768px){
+  .page-foundhotel {
+    @include container(768px);
+    background-color: $white;
+    padding-bottom: 41px;
+  }
+  .page-foundhotel__button{
+    background-color: $blue;
+    width: 458px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+      a {
+      text-decoration: none;
+      color: white;
+    }
   }
 }

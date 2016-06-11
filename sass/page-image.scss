@@ -1,0 +1,67 @@
+@media (min-width: 320px){
+  .page-image{
+    @include container(320px);
+  }
+  .page-image--main{
+    min-height: 388px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 320px 388px;
+  }
+  .page-image--left{
+    min-height: 260px;
+    background-image: url(../img/photo-bridge@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 321px 260px;
+  }
+  .page-image--right
+  {
+    min-height: 260px;
+    background-image: url(../img/photo-city@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 321px 260px;
+  }
+
+}
+@media (min-width: 1024px){
+  .page-image{
+    @include container(1024px);
+  }
+}
+@media (min-width: 768px){
+  .page-image{
+    @include container(768px);
+  }
+  .page-image--main{
+    min-height: 520px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 768px 520px;
+  }
+  .page-image--right{
+    width: 512px;
+    min-height: 260px;
+    position: absolute;
+    margin-top: -260px;
+    margin-left: 516px;
+    background-image: url(../img/photo-city@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 513px 260px;
+  }
+  .page-image--left{
+    width: 512px;
+    min-height: 252px;
+    position: absolute;
+    margin-top: -252px;
+    margin-left: 260px;
+    background-image: url(../img/photo-bridge@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 513px 260px;
+  }
+}
