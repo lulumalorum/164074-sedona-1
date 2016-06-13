@@ -1,8 +1,24 @@
-.page-likes {
-  margin-left: 19px;
-  font-weight: bold;
-  a {
-    text-decoration: none;
-    color: $black;
+@media (min-width: 320px) {
+  .page-likes {
+    margin-left: 19px;
+    font-weight: bold;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
   }
+  .page-likes__thumb {}
+}
+@media (min-width: 768px) {
+  .page-likes {
+    float: right;
+    margin-top: -60px;
+    margin-right: 10px;
+    font-weight: bold;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  .page-likes__thumb {}
 }

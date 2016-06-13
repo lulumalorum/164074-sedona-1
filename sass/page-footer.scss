@@ -1,4 +1,4 @@
-@media (min-width: 320px){
+@media (min-width: 320px) {
   .page-footer {
     @include container(320px);
     padding-top: 40px;
@@ -41,7 +41,7 @@
     }
   }
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .page-footer {
     @include container(768px);
     padding-top: 40px;
@@ -70,7 +70,6 @@
     text-transform: uppercase;
     width: 74px;
     min-height: 39px;
-
     margin-right: 20px;
     vertical-align: bottom;
     text-decoration: none;

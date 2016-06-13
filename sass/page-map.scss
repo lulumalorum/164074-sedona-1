@@ -1,22 +1,20 @@
-@media (min-width: 320px){
-  .page-map{
+@media (min-width: 320px) {
+  .page-map {
     @include container(320px);
     min-height: 352px;
-    background-image: url(../img/bg-map-mobile@1x.jpg);
+    background-image: url("../img/bg-map-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 320px 352px;
   }
 }
-@media (min-width: 768px){
-  .page-map{
+@media (min-width: 768px) {
+  .page-map {
     @include container(768px);
     min-height: 352px;
-    background-image: url(../img/bg-map-mobile@1x.jpg);
+    background-image: url("../img/bg-map-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 768px 352px;
-
   }
-
 }

@@ -1,4 +1,4 @@
-@media (min-width: 320px){
+@media (min-width: 320px) {
   .page-interests {
     @include container(320px);
     color: $black;
@@ -21,7 +21,7 @@
     margin: auto;
   }
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .page-interests {
     @include container(768px);
     color: $black;

@@ -1,4 +1,4 @@
-@media (min-width: 320px){
+@media (min-width: 320px) {
   .page-info {
     @include container(320px);
     background-color: white;
@@ -25,7 +25,7 @@
     text-align: center;
   }
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .page-info {
     @include container(768px);
     background-color: white;
