@@ -42,10 +42,6 @@
   }
   .page-image--right {
     width: 512px;
-    min-height: 260px;
-    position: absolute;
-    margin-top: -260px;
-    margin-left: 516px;
     background-image: url("../img/photo-city@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -54,9 +50,6 @@
   .page-image--left {
     width: 512px;
     min-height: 252px;
-    position: absolute;
-    margin-top: -252px;
-    margin-left: 260px;
     background-image: url("../img/photo-bridge@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
