@@ -7,22 +7,41 @@
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 320px 388px;
+    background-size: cover;
   }
   .page-image--left {
     min-height: 260px;
     background-image: url("../img/photo-bridge@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 321px 260px;
+    background-size: cover;
   }
   .page-image--right {
     min-height: 260px;
     background-image: url("../img/photo-city@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 321px 260px;
+    background-size: cover;
   }
+  .page-image--triangle{
+    position: absolute;
+    top: 93.3%;
+    min-width: 320px;
+
+
+    }
+    .page-image--sedonatext{
+      position: absolute;
+      min-height: 340px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-height: 340px;
+      min-width: 276px;
+      background-image: url(../img/text-sedona-index.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 280px 400px;
+    }
 }
 @media (min-width: 1024px) {
   .page-image {
@@ -38,14 +57,14 @@
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 768px 520px;
+    background-size: cover;
   }
   .page-image--right {
     width: 512px;
     background-image: url("../img/photo-city@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 513px 260px;
+    background-size: cover;
   }
   .page-image--left {
     width: 512px;
@@ -53,6 +72,18 @@
     background-image: url("../img/photo-bridge@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 513px 260px;
+    background-size: cover;
+  }
+  .page-image--triangle{
+    display: none;
+  }
+  .page-image--sedonatext{
+    min-height: 520px;
+    min-width: 540px;
+    background-image: url(../img/text-sedona-index.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 493px 357px;
+
   }
 }

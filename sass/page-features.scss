@@ -1,117 +1,170 @@
-@media (min-width: 320px){
-  .page-features{
+@media (min-width: 320px) {
+  .page-features {
     @include container(320px);
     text-transform: uppercase;
     text-align: center;
   }
-  .page-features__left{
+  .page-features__left {
     padding-top: 42px;
     padding-bottom: 45px;
     background-color: $blue;
   }
-  .page-features__name{
+  .page-features__name {
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 20px;
   }
-  .page-features__name--white
-  {
+  .page-features__name--white {
     color: $white;
   }
-  .page-features__number{
+  .page-features__number {
     margin-top: 20px;
   }
-  .page-features__number--white{
+  .page-features__number--white {
     color: $white;
   }
-  .page-features__text{
+  .page-features__text {
     margin: auto;
     width: 279px;
     margin-top: 30px;
-
   }
-  .page-features__text--white{
+  .page-features__text--white {
     color: $white;
   }
-  .page-features__right{
+  .page-features__right {
     background-color: $blue;
     padding-top: 38px;
     padding-bottom: 38px;
   }
-  .page-features__withicon{
+  .page-features__withicon {
     padding-top: 40px;
     text-align: left;
-    padding-left: 68px;
     padding-bottom: 32px;
-
-    }
- .page-features__withicon .page-features__text{
-   width: 251px;
- }
- .page-features--gray{
-   background-color: $gray;
-   padding-top: 48px;
-   padding-bottom: 50px;
- }
-
+  }
+  .page-features__withicon .page-features__text {
+    width: 251px;
+  }
+  .page-features--gray {
+    background-color: $gray;
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+  .page-features__withicon--home::before {
+    content: " ";
+    display: inline-flex;
+    min-height: 40px;
+    min-width: 42px;
+    background-image: url("../img/icon-house.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 42px 40px;
+  }
+  .page-features__withicon--gift::before {
+    content: " ";
+    display: inline-flex;
+    min-height: 40px;
+    min-width: 42px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 42px 40px;
+  }
+  .page-features__withicon--burger::before {
+    content: " ";
+    display: inline-flex;
+    min-height: 40px;
+    min-width: 42px;
+    background-image: url("../img/icon-burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 42px 40px;
+  }
 }
-
-@media (min-width: 768px){
-  .page-features{
+@media (min-width: 768px) {
+  .page-features {
     @include container(768px);
     text-transform: uppercase;
     text-align: center;
     display: flex;
   }
-  .page-features__left{
+  .page-features__left {
     width: 256px;
     background-color: $blue;
     padding-top: 32px;
     padding-bottom: 38px;
-
   }
-  .page-features__name{
+  .page-features__name {
     width: 200px;
     margin: auto;
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 18px;
   }
-  .page-features__name--white
-  {
+  .page-features__name--white {
     color: $white;
   }
-  .page-features__number{
+  .page-features__number {
     margin-top: 20px;
   }
-  .page-features__number--white{
+  .page-features__number--white {
     color: $white;
   }
-  .page-features__text{
+  .page-features__text {
     margin: auto;
     width: 163px;
     margin-top: 30px;
-
   }
-  .page-features__text--white{
+  .page-features__text--white {
     color: $white;
   }
-  .page-features__right{
+  .page-features__right {
     background-color: $blue;
     width: 256px;
     padding-bottom: 38px;
   }
-  .page-features__withicon{
+  .page-features__withicon {
     text-align: center;
     padding-left: 0;
-    padding-top: 162px;
     padding-bottom: 68px;
     width: 33.33%;
   }
- .page-features--gray{
-   background-color: $gray;
-   width: 33.34%;
-   padding-top: 48px;
-   padding-bottom: 50px;
- }
+  .page-features__withicon--home::before {
+    content: " ";
+    display: flex;
+    min-height: 78px;
+    min-width: 80px;
+    background-image: url("../img/icon-house.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 78px;
+    padding-bottom: 30px;
+  }
+  .page-features__withicon--gift::before {
+    content: " ";
+    display: flex;
+    min-height: 78px;
+    min-width: 80px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 78px;
+    padding-bottom: 30px;
+  }
+  .page-features__withicon--burger::before {
+    content: " ";
+    display: flex;
+    min-height: 78px;
+    min-width: 80px;
+    background-image: url("../img/icon-burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 78px;
+    padding-bottom: 30px;
+  }
+  .page-features--gray {
+    background-color: $gray;
+    width: 33.34%;
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
 }

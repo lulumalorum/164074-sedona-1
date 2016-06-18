@@ -10,18 +10,19 @@
 <body>
   <header class="page-header">
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
-      <a class="main-nav__toogle">Открыть</a>
+
       <div class="main-nav__wrapper">
-        <a class="main-nav__cancel">Закрыть</a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a>Главная</a>
+            <a class="main-nav__cancel">Закрыть</a>
           </li>
           <li class="main-nav__item">
             <a href="#">Фото и видео</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item  main-nav__item--logo">
             <a href="index.html"><img class="page-logo" src="img/logo-sedona-mobile.svg" height="83" width="103" alt="logo-small"></a>
+            <a class="main-nav__toogle">Открыть</a>
           </li>
           <li class="main-nav__item">
             <a href="#">Форма отзыва</a>
@@ -34,8 +35,13 @@
     </nav>
   </header>
   <div class="page-image  page-image--main">
+    <div class="page-image--sedonatext">
 
+    </div>
+    <img class="page-image--triangle" src="img/bg-intro-triangle-mobile.svg">
   </div>
+
+
   <div class="page-info">
     <p class="page-info__determ">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
     <p class="page-info__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
@@ -53,19 +59,19 @@
   </div>
 
   <div class="page-features">
-    <div class="page-features__withicon">
+    <div class="page-features__withicon  page-features__withicon--home">
       <div class="page-features__name  page-features__name--big">
         Жилье
       </div>
       <p class="page-features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
     </div>
-   <div class="page-features__withicon">
+   <div class="page-features__withicon  page-features__withicon--gift">
     <div class="page-features__name  page-features__name--big">
       Cувениры
     </div>
     <p class="page-features__text">Не только китайского, но и местного производства!</p>
   </div>
-    <div class="page-features__withicon">
+    <div class="page-features__withicon  page-features__withicon--burger">
       <div class="page-features__name  page-features__name--big">
         Еда
       </div>
