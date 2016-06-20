@@ -18,7 +18,7 @@
 
     }
     .main-nav__item {
-      display: flex;
+      position: relative;
       width: 100%;
       font-size: 18px;
       font-weight: bold;
@@ -47,8 +47,11 @@
 
     }
     .main-nav__cancel {
+      position: absolute;
       min-height: 28px;
       min-width: 28px;
+      right: 20px;
+      top:14px;
       font-size: 0;
       background-image: url(../img/icon-cross.svg);
       background-position: center;
@@ -56,8 +59,11 @@
 
     }
     .main-nav__toogle {
+      position: absolute;
       min-height: 23px;
       min-width:  23px;
+      right: 20px;
+      top:18px;
       background-image: url(../img/icon-menu.svg);
       background-repeat: no-repeat;
       color: #000;

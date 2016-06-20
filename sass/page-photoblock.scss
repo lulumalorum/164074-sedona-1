@@ -5,7 +5,9 @@
   }
   .page-photoblock__img {
     display: block;
-    margin: 0 auto 20px;
+    min-height: 283px;
+    margin-right: 21px;
+    background-repeat: no-repeat;
   }
   .page-photoblock__title {
     margin-left: 19px;
@@ -16,6 +18,15 @@
   .page-photoblock__author {
     margin-left: 19px;
     margin-bottom: 13px;
+  }
+  .page-photoblock__img--cactus{
+    background-image: url(../img/photo-2-mobile@1x.jpg);
+  }
+  .page-photoblock__img--northroad{
+    background-image: url(../img/photo-3-mobile@1x.jpg);
+  }
+  .page-photoblock__img--bridge{
+    background-image: url(../img/photo-4-mobile@1x.jpg);
   }
 }
 @media (min-width: 768px) {
@@ -25,36 +36,65 @@
     width: 768px;
   }
   .page-photoblock__item {
-    margin-left: 320px;
-    width: 350px;
-    padding: 0;
-    margin: 0;
+    margin-left: 8.2%;
+    width: 42.1%;
     display: inline-block;
+    padding-top: 0;
+    background-color: $darkgray;
   }
   .page-photoblock__item--big {
+    margin-left: 8.2%;
+    width: 84.7%;
+    display: inline-block;
+    padding-top: 0;
+    background-color: $darkgray;
+  }
+
+  .page-photoblock__item:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  .page-photoblock__item:nth-child(1) {
+    margin-left: 8.2%;
+  }
+  .page-photoblock__img--big {
     background-image: url("../img/photo-1-mobile@1x.jpg");
     min-height: 398px;
     background-repeat: no-repeat;
-    background-size: 768px 398px;
-    width: 768px;
-    padding: 0;
-    margin: 0;
+    background-size: cover;
+    background-color: $darkgray;
+
   }
   .page-photoblock__title--big {
     margin-top: 420px;
   }
   .page-photoblock__img {
-    display: block;
-    margin: 0 auto 20px;
+    min-height: 265px;
+    min-width: 42.1%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .page-photoblock__img--cactus{
+    background-image: url(../img/photo-2-mobile@1x.jpg);
+  }
+  .page-photoblock__img--northroad{
+    background-image: url(../img/photo-3-mobile@1x.jpg);
+  }
+  .page-photoblock__img--bridge{
+    background-image: url(../img/photo-4-mobile@1x.jpg);
   }
   .page-photoblock__title {
-    margin-left: 55px;
+
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 16px;
   }
   .page-photoblock__author {
-    margin-left: 55px;
+
     margin-bottom: 13px;
+  }
+  .page-photoblock__wrapper{
+    display: flex;
+    flex-direction: column;
   }
 }
