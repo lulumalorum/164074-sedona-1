@@ -1,10 +1,11 @@
 @media (min-width: 320px) {
   .page-form__btn {
-    @include container(320px);
+
     border: none;
-    width: 285px;
-    margin-left: 240px;
-    padding: 20px auto 20px 5px;
+    width: 91%;
+    min-height: 58px;
+    margin-left:4.5%;
+    margin-top: 15%;
     color: $white;
     background-color: $blue;
     text-transform: uppercase;
@@ -15,7 +16,7 @@
 }
 @media (min-width: 768px) {
   .page-form__btn {
-    @include container(768px);
+     margin: 0;
     border: none;
     width: 285px;
     margin: 50px auto auto 5px;

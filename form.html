@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="page-container">
-      <header class="page-header">
-        <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <a class="main-nav__toogle">Открыть меню</a>
-          <div class="main-nav__wrapper">
-            <a class="main-nav__cancel">Закрыть меню</a>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">Фото и видео</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="index.html"><img class="page-logo" src="img/logo-sedona-mobile.svg" height="83" width="103" alt="logo-small"></a>
-              </li>
-              <li class="main-nav__item">
-                <a>Форма отзыва</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">HTML academy</a>
-              </li>
-            </ul>
-          </div>
 
-        </nav>
-      </header>
-      <h1 class="page-title">
-        Sedona
-      </h1>
-      <div class="page-welcomemessage">
-        <div class="page-welcomemessage__title">
-          Оставьте свой отзыв
-        </div>
-        <p class="page-welcomemessage__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+            <a class="main-nav__cancel">Закрыть</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--logo">
+            <a href="index.html"><img class="page-logo" src="img/logo-sedona-mobile.svg" height="83" width="103" alt="logo-small"></a>
+            <a class="main-nav__toogle">Открыть</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML academy</a>
+          </li>
+        </ul>
       </div>
-      <form class="page-form" action="#" method="get">
-        <fieldset>
-          <div class="page-group">
-            <div class="page-formblock1">
-            <span class="page-formblock__title">Представьтесь, пожалуйста</span>
-            <div class="page-formblock__group">
-              <label class="page-formblock__label" for="name">Имя</label>
-              <input class="page-formblock__field  page-formblock__field--superlong" type="text" name="firstname" id="name" value="Петр">
-            </div>
-            <div class="page-formblock__group">
-              <label class="page-formblock__label" for="lstname">Фамилия</label>
-              <input class="page-formblock__field  page-formblock__field" type="text" name="lastname" id="lstname" value="Иванов">
-            </div>
-            <div class="page-formblock__group">
-              <label class="page-formblock__label" for="fthrname">Отчество</label>
-              <input class="page-formblock__field  page-formblock__field" type="text" name="fathername" id="fthrname" value="Александрович">
-            </div>
+    </nav>
+  </header>
+  <div class="page-title">
+
+      </div>
+  <div class="page-welcomemessage">
+    <div class="page-welcomemessage__title">
+      Оставьте свой отзыв
+    </div>
+    <p class="page-welcomemessage__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  </div>
+  <form class="page-form" action="#" method="get">
+    <fieldset>
+      <div class="page-formblock">
+        <div class="page-formblock__wrap">
+        <div class="page-formblock__item  page-formblock__item--personaldata">
+          <span class="page-formblock__title">Представьтесь, пожалуйста</span>
+          <div class="page-formblock__group">
+            <label class="page-formblock__label" for="name">Имя</label>
+            <input class="page-formblock__field  page-formblock__field--superlong" type="text" name="firstname" id="name" value="Петр">
           </div>
-          <div class="page-formblock2">
-            <span class="page-formblock__title">Контактная информация:</span>
+          <div class="page-formblock__group">
+            <label class="page-formblock__label" for="lstname">Фамилия</label>
+            <input class="page-formblock__field  page-formblock__field" type="text" name="lastname" id="lstname" value="Иванов">
+          </div>
+          <div class="page-formblock__group">
+            <label class="page-formblock__label" for="fthrname">Отчество</label>
+            <input class="page-formblock__field  page-formblock__field" type="text" name="fathername" id="fthrname" value="Александрович">
+          </div>
+        </div>
+        <div class="page-formblock__item page-formblock__item--contacts">
+          <span class="page-formblock__title  page-formblock__title--center">Контактная информация:</span>
+          <div class="page-formblock__contactwrap">
             <label class="page-formblock__label  page-formblock__label--long" for="tel">Контактный телефон:</label>
             <div class="page-formblock__group2">
               <input class="page-formblock__field  page-formblock__field--long" type="tel" name="phonenumber" id="tel" value="Введите телефон">
               <div class="page-formblock__icon page-formblock__icon--tel">
               </div>
             </div>
-            <label class="page-formblock__label  page-formblock__label--long" for="mail">Электронная почта:</label>
-            <div class="page-formblock__group2">
-              <input class="page-formblock__field  page-formblock__field--long" type="email" name="email" id="mail" value="Введите e-mail">
-              <div class="page-formblock__icon  page-formblock__icon--email">
-              </div>
           </div>
-          <div class="page-formblock3">
+      <div class="page-formblock__contactwrap">
+          <label class="page-formblock__label  page-formblock__label--long" for="mail">Электронная почта:</label>
+          <div class="page-formblock__group2">
+            <input class="page-formblock__field  page-formblock__field--long" type="email" name="email" id="mail" value="Введите e-mail">
+            <div class="page-formblock__icon  page-formblock__icon--email">
+            </div>
+          </div>
+        </div>
+        </div>
+          <div class="page-formblock__item page-formblock__item--impression">
             <span class="page-formblock__title">Ваше общее впечатление:</span>
             <div class="page-formblock__group">
               <input class="page-formblock__radiobutton  page-formblock__radiobutton--checked" type="radio" name="option1" id="op1" value="positive" checked>
@@ -89,43 +96,51 @@
               <label class="page-formblock__label  page-formblock__label--bold" for="op3">Затрудняюсь ответить</label>
             </div>
           </div>
-          <div class="page-formblock4">
-            <span class="page-formblock__title">Посещенные достопримечательности:</span>
-            <div class="page-formblock__group">
-              <input class="page-formblock__checkbox  page-formblock__checkbox--checked" type="checkbox" name="option4" id="op4" value="bridge" checked>
-              <label class="page-formblock__label page-formblock__label--bold" for="op4">Мост Дьявола</label>
+          <div class="page-formblock__item  page-formblock__item--landmarks">
+            <span class="page-formblock__title  page-formblock__title--center">Посещенные достопримечательности:</span>
+            <div class="page-formblock__column page-formblock__column--left">
+              <div class="page-formblock__group">
+                <input class="page-formblock__checkbox  page-formblock__checkbox--checked" type="checkbox" name="option4" id="op4" value="bridge" checked>
+                <label class="page-formblock__label page-formblock__label--bold" for="op4">Мост Дьявола</label>
+              </div>
+              <div class="page-formblock__group">
+                <input class="page-formblock__checkbox" type="checkbox" name="option5" id="op5" value="park" checked>
+                <label class="page-formblock__label page-formblock__label--bold" for="op5">Слайд-парк</label>
+              </div>
             </div>
-            <div class="page-formblock__group">
-              <input class="page-formblock__checkbox" type="checkbox" name="option5" id="op5" value="park" checked>
-              <label class="page-formblock__label page-formblock__label--bold" for="op5">Слайд-парк</label>
-            </div>
-            <div class="page-formblock__group">
-              <input class="page-formblock__checkbox" type="checkbox" name="option6" id="op6" value="mountain">
-              <label class="page-formblock__label page-formblock__label--bold" for="op6">Гора-колокол</label>
-            </div>
-            <div class="page-formblock__group">
-              <input class="page-formblock__checkbox" type="checkbox" name="option7" id="op7" value="rock" checked>
-              <label class="page-formblock__label page-formblock__label--bold" for="op7">Красные скалы</label>
-            </div>
+           <div class="page-formblock__column  page-formblock__column--right">
+             <div class="page-formblock__group">
+               <input class="page-formblock__checkbox" type="checkbox" name="option6" id="op6" value="mountain">
+               <label class="page-formblock__label page-formblock__label--bold" for="op6">Гора-колокол</label>
+             </div>
+             <div class="page-formblock__group">
+               <input class="page-formblock__checkbox" type="checkbox" name="option7" id="op7" value="rock" checked>
+               <label class="page-formblock__label page-formblock__label--bold" for="op7">Красные скалы</label>
+             </div>
+           </div>
           </div>
-          <div class="page-formblock5">
-            <span class="page-formblock__title">Опишите свои эмоции:</span>
+          <div class="page-formblock__item  page-formblock__emotions">
+            <span class="page-formblock__title  page-formblock__title--center">Опишите свои эмоции:</span>
             <textarea class="page-formblock__textarea" name="text">Опишите подробно все свои восторги</textarea>
           </div>
+
+
+        <button class="page-form__btn" type="submit">Отправить отзыв</button>
         </div>
-          <button class="page-form__btn" type="submit">Отправить отзыв</button>
-        </fieldset>
-      </form>
-      <footer class="page-footer">
-        <a class="page-footer__visit" href="#">#Visitsedona</a>
-        <div class="page-social">
-          <a class="page-social__icon  page-social__icon--twitter" href="#"><span>Twitter</span></a>
-          <a class="page-social__icon  page-social__icon--fb" href="#"><span>Facebook</span></a>
-          <a class="page-social__icon  page-social__icon--youtube" href="#"><span>Youtube</span></a>
         </div>
-        <span class="page-footer__developers">Разработано</span>
-        <a class="page-footer__imgdevelopers" href="#"><span>HtmlAcademy</span></a>
-      </footer>
+    </fieldset>
+  </form>
+  <footer class="page-footer">
+    <a class="page-footer__visit" href="#">#Visitsedona</a>
+    <div class="page-social">
+      <a class="page-social__icon  page-social__icon--twitter" href="#"><span>Twitter</span></a>
+      <a class="page-social__icon  page-social__icon--fb" href="#"><span>Facebook</span></a>
+      <a class="page-social__icon  page-social__icon--youtube" href="#"><span>Youtube</span></a>
     </div>
-  </body>
+    <span class="page-footer__developers">Разработано</span>
+    <a class="page-footer__imgdevelopers" href="#"><span>HtmlAcademy</span></a>
+  </footer>
+  </div>
+</body>
+
 </html>
