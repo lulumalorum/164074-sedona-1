@@ -2,13 +2,17 @@
   .page-footer {
     @include container(320px);
     padding-top: 40px;
-    display: block;
-    text-align: center;
     padding-bottom: 20px;
     a {
       text-decoration: none;
       color: $black;
     }
+  }
+  .page-footer__wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .page-footer__visit {
     font-size: 21px;
@@ -17,14 +21,9 @@
     text-transform: uppercase;
   }
   .page-footer__developers {
-    display: inline-block;
+
     font-size: 14px;
     text-transform: uppercase;
-    width: 74px;
-    min-height: 39px;
-    padding-top: 15px;
-    margin-right: 20px;
-    vertical-align: bottom;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -35,10 +34,16 @@
     display: inline-block;
     background-image: url("../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     span {
       display: none;
     }
+  }
+  .page-footer__copyright{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 @media (min-width: 768px) {
@@ -46,45 +51,43 @@
     @include container(768px);
     padding-top: 40px;
     text-align: center;
-    padding-bottom: 55px;
+    display: flex;
+    flex-wrap: wrap;
     a {
       text-decoration: none;
       color: $black;
     }
   }
+  .page-footer__wrap{
+    width: 86.4%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
   .page-footer__visit {
-    margin-left: 58px;
-    display: inline-block;
-    float: left;
-    font-size: 21px;
-    line-height: 26px;
-    text-weight: bold;
-    text-transform: uppercase;
+    width: 37.33%;
+    text-align:left;
+
+  }
+  .page-footer__copyright{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 33.33%;
+    justify-content: flex-end;
   }
   .page-footer__developers {
-    float: left;
-    margin-left: 120px;
-    margin-top: -15px;
-    display: inline-block;
-    font-size: 14px;
-    text-transform: uppercase;
-    width: 74px;
-    min-height: 39px;
-    margin-right: 20px;
-    vertical-align: bottom;
-    text-decoration: none;
-    text-transform: uppercase;
+   margin-right: 4%;
+   text-align: right;
   }
   .page-footer__imgdevelopers {
-    float: left;
-    margin-top: -19px;
-    text-transform: uppercase;
-    min-height: 49px;
-    width: 46px;
-    display: inline-block;
     background-image: url("../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     span {
       display: none;
     }

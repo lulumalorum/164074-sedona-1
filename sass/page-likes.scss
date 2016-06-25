@@ -23,8 +23,6 @@
 @media (min-width: 768px) {
   .page-likes {
     margin: 0;
-
-    width: 19%;
     font-weight: bold;
     justify-content: flex-end;
     a {
@@ -42,8 +40,7 @@
 
   }
   .page-likes__number{
-    margin-right: 30%;
-    margin-top: 3%;
+    margin-top: 5%;
 
   }
 }

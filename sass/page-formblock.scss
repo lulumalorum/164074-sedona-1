@@ -153,10 +153,13 @@
     text-align: center;
   }
   .page-formblock__group {
-    display: block;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
   .page-formblock__group2 {
     margin: 0;
+    display: flex;
     position: relative;
     width: 100%;
   }
@@ -173,9 +176,7 @@
     width: 100%;
   }
   .page-formblock__field--long {}
-  .page-formblock__field--superlong {
-    width: 222px;
-  }
+
   .page-formblock__label {
     margin-right: 10px;
     text-transform: uppercase;
@@ -185,7 +186,7 @@
   .page-formblock__icon {
     position: absolute;
     top: 0;
-    left: 205px;
+    left: 605px;
   }
   .page-formblock__label--long {
     margin-left: 30px;
