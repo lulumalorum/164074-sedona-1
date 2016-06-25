@@ -135,6 +135,10 @@ input[type="radio"] + label::before {
       background-position: center;
       background-repeat: no-repeat;
   }
+  .page-formblock__item--emotions
+  {
+    margin-top: 69px;
+  }
 }
 @media (min-width: 768px) {
   .page-formblock {
