@@ -19,6 +19,7 @@
     line-height: 26px;
     text-weight: bold;
     text-transform: uppercase;
+    font-weight: bold;
   }
   .page-footer__developers {
 
@@ -92,4 +93,9 @@
       display: none;
     }
   }
+}
+@media (min-width: 1200px){
+  .page-footer {
+    @include container(1200px);
+    }
 }

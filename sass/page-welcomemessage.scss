@@ -11,6 +11,7 @@
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 40px;
+    font-weight: bold;
   }
   .page-welcomemessage__text {
     font-size: 14px;
@@ -37,5 +38,10 @@
     margin: auto;
     font-size: 14px;
     line-height: 24px;
+  }
+}
+@media (min-width: 1200px){
+  .page-welcomemessage {
+    @include container(1200px);
   }
 }
