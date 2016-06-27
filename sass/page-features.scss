@@ -45,7 +45,7 @@
   .page-features__withicon .page-features__text {
     width: 66%;
   }
-  .page-features--gray {
+  .page-features__gray {
     background-color: $gray;
     padding-top: 48px;
 
@@ -187,7 +187,7 @@
     background-size: 80px 78px;
     padding-bottom: 30px;
   }
-  .page-features--gray {
+  .page-features__gray {
     width: 33.34%;
   }
   .page-features__text--gray{
@@ -203,6 +203,6 @@
   .page-features {
     @include container(1200px);
   }
-
+ 
 
 }

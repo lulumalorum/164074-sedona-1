@@ -2,10 +2,13 @@
   .page-image {
     @include container(320px);
   }
-  .page-image--main {
+  .page-image__main {
+    @include container(320px);
+    position: relative;
     min-height: 388px;
+    width: 100%;
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-mobile@2x.jpg");
     }
     background-position: center;
@@ -15,7 +18,7 @@
   .page-image--left {
     min-height: 260px;
     background-image: url("../img/photo-bridge@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/photo-bridge@2x.jpg");
     }
     background-position: center;
@@ -25,42 +28,49 @@
   .page-image--right {
     min-height: 260px;
     background-image: url("../img/photo-city@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/photo-city@2x.jpg");
     }
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .page-image--triangle{
+  .page-image__triangle {
     position: absolute;
-    top: 93.3%;
+    min-height: 27px;
     width: 100%;
-    }
-    .page-image--sedonatext{
-      position: absolute;
-      min-height: 340px;
-      left: 50%;
-      transform: translateX(-50%);
-      min-height: 340px;
-      min-width: 276px;
-      background-image: url(../img/text-sedona-index.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 280px 400px;
-    }
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    background-size: 334px;
+    top: 93%;
+  }
+  .page-image__sedonatext {
+    position: absolute;
+    min-height: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 340px;
+    width: 89%;
+    background-image: url("../img/text-sedona-index.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 280px 400px;
+  }
 }
 @media (min-width: 768px) {
   .page-image {
     @include container(768px);
   }
-  .page-image--main {
+  .page-image__main {
+    @include container(768px);
     min-height: 520px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
-    }
+  }
   .page-image--right {
     width: 70%;
   }
@@ -68,18 +78,14 @@
     width: 70%;
     min-height: 252px;
   }
-  .page-image--triangle{
-    background-image: url(../img/bg-intro-triangle-tablet.svg);
-    top:89%;
+  .page-image__triangle {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-size: 779px;
   }
-  .page-image--sedonatext{
-    min-height: 520px;
-    min-width: 540px;
-    background-image: url(../img/text-sedona-index.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 493px 357px;
-
+  .page-image__sedonatext {
+    width: 59%;
+    background-size: cover;
+    top: 78px;
   }
 }
 @media (min-width: 1200px) {
@@ -87,11 +93,20 @@
     @include container(1200px);
     width: 70%;
   }
-  .page-image--main{
-    width: 93.3%;
+  .page-image__main {
+    @include container(1200px);
+    position: relative;
+    width: 100%;
+    margin: auto;
   }
-  .page-image--triangle{
-    top:89%;
-    background-image: url(../img/bg-intro-triangle-desktop.svg);
+  .page-image__triangle {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    top: 88.6%;
+    min-height: 60px;
+    background-size: 769px;
+    background-size: 1203px;
+  }
+  .page-image__sedonatext {
+    width: 37%;
   }
 }

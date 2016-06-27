@@ -7,7 +7,8 @@
 }
 @mixin container($width) {
   position: relative;
-  width: $width;
+  max-width: $width; 
+  width: 100%;
   margin: auto;
   background-color: #fff;
 }
