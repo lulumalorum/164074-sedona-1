@@ -106,7 +106,7 @@
     display: flex;
   }
   .page-features__left {
-    width: 30%;
+    width: 33%;
     background-color: $blue;
     padding-top: 32px;
     padding-bottom: 38px;
@@ -137,7 +137,7 @@
   }
   .page-features__right {
     background-color: $blue;
-    width: 30%;
+    width: 33%;
     padding-bottom: 38px;
   }
   .page-features__withicon {
@@ -203,6 +203,11 @@
   .page-features {
     @include container(1200px);
   }
- 
+ .page-features__right{
+   width: 35%;
+ }
+ .page-features__left{
+   width: 35%;
+ }
 
 }

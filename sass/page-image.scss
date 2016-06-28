@@ -40,11 +40,10 @@
     min-height: 27px;
     width: 100%;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-position: center;
     background-repeat: no-repeat;
     bottom: 0;
     background-size: 334px;
-    top: 93%;
+    background-position: 50% 100%;
   }
   .page-image__sedonatext {
     position: absolute;
@@ -80,7 +79,7 @@
   }
   .page-image__triangle {
     background-image: url("../img/bg-intro-triangle-desktop.svg");
-    background-size: 779px;
+    background-size: 1203px;
   }
   .page-image__sedonatext {
     width: 59%;
@@ -101,11 +100,9 @@
   }
   .page-image__triangle {
     background-image: url("../img/bg-intro-triangle-desktop.svg");
-    top: 88.6%;
     min-height: 60px;
-    background-size: 769px;
-    background-size: 1203px;
-  }
+    
+    }
   .page-image__sedonatext {
     width: 37%;
   }

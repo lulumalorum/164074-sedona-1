@@ -12,6 +12,7 @@
     margin: auto;
   }
   .page-photoblock__img {
+    display: block;
     min-height: 283px;
     background-repeat: no-repeat;
   }
@@ -56,7 +57,7 @@
       margin-top: 420px;
     }
     .page-photoblock__img {
-      max-height: 265px;
+      min-height: 265px;
       width: 100%;
     }
     .page-photoblock__title {
@@ -91,12 +92,20 @@
     @include container(1200px);
     }
     .page-photoblock__item{
+      color: $white;
+      position: relative;
       width: 33.33%;
     }
     .page-photoblock__item--big {
       width: 100%;
       }
     .page-photoblock__center{
+      width: 100%;
+    }
+    .page-photoblock__wrapper{
+      background-color: rgba(0,0,0,0.4);
+      bottom: 0;
+      position: absolute;
       width: 100%;
     }
 }

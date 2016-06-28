@@ -26,9 +26,10 @@
     height: 28px;
     width: 100%;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-position: center;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
-    bottom: -1px;
+    background-size: 334px;
+    bottom: 0;
 
   }
 }
@@ -49,7 +50,8 @@
     .page-title__triangle{
       background-image: url("../img/bg-intro-triangle-desktop.svg");
        height: 62px;
-       bottom: -2px;
+       bottom: 0;
+       background-size: 1203px;
     }
 
 }

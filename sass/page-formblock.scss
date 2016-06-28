@@ -10,13 +10,16 @@
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 27px;
-    paddin-top: 22px;
+
   }
   .page-formblock__group {
-    width: 90.4%;
-    margin: auto;
+    display: flex;
+padding-bottom: 20px;
+width: 87.4%;
+margin: auto;
   }
   .page-formblock__group2 {
+    width: 94.4%;
     position: relative;
     display: inline-block;
     margin-left: 20px;
@@ -31,9 +34,12 @@
     line-height: 26px;
     font-weight: bold;
     width: 190px;
+    &:focus{
+      outline:none;
+    }
   }
   .page-formblock__field--superlong {
-    width: 222px;
+    width: 100%;
   }
   .page-formblock__title--center{
     text-align: center;
@@ -63,7 +69,7 @@
     width: 86.4%;
     display: block;
     margin: auto;
-        background: $gray;
+    background: $gray;
     border: none;
     min-height: 160px;
     padding-top: 18px;
@@ -71,6 +77,11 @@
     font-size: 16px;
     line-height: 26px;
     font-weight: bold;
+    resize: none;
+    &:focus{
+      outline: none;
+    }
+
   }
   fieldset {
     border-style: hidden;
@@ -106,7 +117,6 @@ input[type="radio"] + label::before {
     height: 56px;
     width: 56px;
     border-radius: 28px;
-    margin-top: 5px;
     margin-right: 10px;
     background-color: $gray;
 }
@@ -136,7 +146,7 @@ input[type="radio"] + label::before {
   }
   .page-formblock__item--emotions
   {
-    margin-top: 69px;
+
   }
   .page-formblock__item{
     padding-top: 50px;
@@ -155,22 +165,71 @@ input[type="radio"] + label::before {
   .page-formblock__item {
     width: 50%;
   }
-  .page-formblock__item--personaldata {}
+  .page-formblock__item--impression{
+        &::before{
+          content: "";
+      display: block;
+      width: 1px;
+      height: 80%;
+      background: #eeeeee;
+      position: absolute;
+      box-sizing: border-box;
+      top: 14%;
+      right: 0;
+    }
+  }
   .page-formblock__item--contacts {
+    position: relative;
     width: 100%;
   }
   .page-formblock__item--impression {
     order: -1;
     width: 50%;
+    position: relative;
   }
   .page-formblock__item--landmarks {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
   }
+
+  .page-formblock__item--contacts .page-formblock__title{
+  width: 100%;
+  margin: auto;
+  &::before{
+    content: "";
+    display:block;
+    width: 100%;
+    height: 1px;
+    background: $gray;
+    position: absolute;
+    box-sizing: border-box;
+    top:63px;
+}
+}
 .page-formblock__item--landmarks .page-formblock__title{
   width: 100%;
+  margin: auto;
+  &::before{
+    content: "";
+    display:block;
+    width: 100%;
+    height: 1px;
+    background: $gray;
+    position: absolute;
+    box-sizing: border-box;
+    top:80px;
+  }
 }
+  .page-formblock__title span{
+    display: block;
+    position: relative;
+    width: 34%;
+    margin: auto;
+    z-index: 4;
+  }
+
  .page-formblock__column{
    width: 50%;
  }
@@ -188,10 +247,26 @@ input[type="radio"] + label::before {
    width: 100%;
  }
 
-  .page-formblock__emotions{
+  .page-formblock__item--emotions{
+    position: relative;
     width: 100%;
   }
+  .page-formblock__item--emotions .page-formblock__title{
+  width: 100%;
+  margin: auto;
+  &::before{
+    content: "";
+    display:block;
+    width: 100%;
+    height: 1px;
+    background: $gray;
+    position: absolute;
+    box-sizing: border-box;
+    top:63px;
+}
+}
   .page-formblock__title {
+    width: 80%;
     display: block;
     font-size: 18px;
     line-height: 26px;
@@ -199,7 +274,7 @@ input[type="radio"] + label::before {
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 27px;
-    paddin-top: 22px;
+
   }
   .page-formblock__title--center{
     text-align: center;
@@ -219,9 +294,13 @@ input[type="radio"] + label::before {
   .page-formblock__group3 {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 138px;
+    justify-content: center;
   }
   .page-formblock__group3 .page-formblock__group{
-    width: 34%;
+    margin: 0;
+    width: 50%;
+    padding-bottom: 21px;
   }
   .page-formblock__field {
     min-height: 56px;
@@ -233,6 +312,7 @@ input[type="radio"] + label::before {
     line-height: 26px;
     font-weight: bold;
     width: 100%;
+
   }
   .page-formblock__field--long {}
 
@@ -255,6 +335,20 @@ input[type="radio"] + label::before {
   .page-formblock__label--bold {
     font-weight: bold;
     text-transform: capitalize;
+  }
+  .page-formblock__item--personaldata{
+    width: 50%;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+  }
+  .page-formblock__item--personaldata .page-formblock__group{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+    width: 80%;
+    justify-content: flex-end;
   }
   .page-formblock__textarea {
   padding: 0;
@@ -292,7 +386,7 @@ input[type="radio"] + label::before {
   margin-bottom: 48px;
 }
 .page-formblock__title{
-  width: 100%;
+  width: 80%;
 }
 .page-formblock__contactwrap{
   flex-wrap: nowrap;
@@ -311,16 +405,25 @@ input[type="radio"] + label::before {
   left: 236px;
 }
 .page-formblock__item--personaldata{
-  width: 44%;
-  margin-left: 13%;
+
+  width: 50%;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+
 }
 .page-formblock__item--impression{
-  width: 43%;
+  width: 50%;
 }
   .page-formblock__group3{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     justify-content:space-between;
+  }
+  .page-formblock__group3 .page-formblock__group:last-child{
+    flex-shrink: 2.8;
   }
 }
