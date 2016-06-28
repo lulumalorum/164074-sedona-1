@@ -1,17 +1,111 @@
-.page-photoblock {
-  padding-top: 22px;
+@media (min-width: 320px) {
+  .page-photoblock{
+    @include container(320px);
+      }
+  .page-photoblock__item{
+    padding-top: 22px;
+  }
+  .page-photoblock__center {
+    display: flex;
+    flex-wrap: wrap;
+    width: 88%;
+    margin: auto;
+  }
+  .page-photoblock__img {
+    display: block;
+    min-height: 283px;
+    background-repeat: no-repeat;
+  }
+  .page-photoblock__title {
+    padding-bottom: 9px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .page-photoblock__authorship {
+    padding-bottom: 9px;
+  }
+  .page-photoblock__wrapper {
+    display: flex;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    flex-direction: column;
+  }
+  @media (min-width: 768px) {
+    .page-photoblock {
+      @include container(768px);
+      padding-top: 22px;
+    }
+    .page-photoblock__container {
+      width: 650px;
+      margin: auto;
+    }
+    .page-photoblock__item {
+      width: 50%;
+      padding-top: 0;
+      background-color: $darkgray;
+      margin: 0;
+    }
+    .page-photoblock__item--big {
+      width: 100%;
+      padding-top: 0;
+      background-color: $darkgray;
+    }
+    .page-photoblock__img--big {
+      width: 100%;
+      }
+    .page-photoblock__title--big {
+      margin-top: 420px;
+    }
+    .page-photoblock__img {
+      min-height: 265px;
+      width: 100%;
+    }
+    .page-photoblock__title {
+
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .page-photoblock__author {
+
+    }
+    .page-photoblock__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+    }
+    .page-photoblock__center {
+      display: flex;
+      flex-wrap: wrap;
+      width: 84.63%;
+      margin: auto;
+    }
+    .page-photoblock__authorship {
+      width: calc(100% - 90px);
+      margin-left: 19px;
+      padding: 0;
+    }
+  }
 }
-.page-photoblock__img {
-  display: block;
-  margin: 0 auto 20px;
-}
-.page-photoblock__title {
-  margin-left: 19px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-.page-photoblock__author {
-  margin-left: 19px;
-  margin-bottom: 13px;
+@media (min-width: 1200px){
+  .page-photoblock {
+    @include container(1200px);
+    }
+    .page-photoblock__item{
+      color: $white;
+      position: relative;
+      width: 33.33%;
+    }
+    .page-photoblock__item--big {
+      width: 100%;
+      }
+    .page-photoblock__center{
+      width: 100%;
+    }
+    .page-photoblock__wrapper{
+      background-color: rgba(0,0,0,0.4);
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+    }
 }

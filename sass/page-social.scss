@@ -1,30 +1,78 @@
-.page-social {
-  margin-top: 40px;
-  margin-bottom: 30px;
-  min-height: 49px;
-  span{
-    display: none;
+@media (min-width: 320px) {
+  .page-social {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 44px;
+    width: 48%;
+    justify-content: space-between;
+    margin: 0;
+    max-height: 49px;
+    span {
+      display: none;
+    }
+  }
+  .page-social__icon {
+    width: 46px;
+    min-height: 49px;
+    background-color: $blue;
+    }
+  .page-social__icon--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .page-social__icon--fb {
+    background-image: url("../img/icon-facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .page-social__icon--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
-.page-social__icon{
-  width: 46px;
-  min-height: 49px;
-  background-color: $blue;
-  display: inline-block;
-  margin-right: 7px;
+@media (min-width: 768px) {
+  .page-social {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 22.33%;
+    justify-content: space-between;
+    margin: 0;
+    max-height: 49px;
+    span {
+      display: none;
+    }
+  }
+  .page-social__icon {
+    margin: 0;
+    width: 46px;
+    min-height: 49px;
+    background-color: $blue;
+    display: inline-block;
+
+  }
+  .page-social__icon--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .page-social__icon--fb {
+    background-image: url("../img/icon-facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .page-social__icon--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-.page-social__icon--twitter{
-  background-image: url(../img/icon-twitter.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.page-social__icon--fb{
-  background-image: url(../img/icon-facebook.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.page-social__icon--youtube{
-  background-image: url(../img/icon-youtube.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+@media (min-width: 1200px)
+{
+  .page-social {
+    width: 14.33%;
+  }
+
 }

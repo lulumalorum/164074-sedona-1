@@ -1,8 +1,46 @@
-.page-likes {
-  margin-left: 19px;
-  font-weight: bold;
-  a {
-    text-decoration: none;
-    color: $black;
+@media (min-width: 320px) {
+  .page-likes {
+    display: flex;
+
+    font-weight: bold;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  .page-likes__thumb {
+    font-size: 0;
+    min-height: 20px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-like.svg);
+    }
+    .page-likes__number{
+      margin-left: 5%;
+      margin-top: 1%;
+    }
+}
+@media (min-width: 768px) {
+  .page-likes {
+    margin: 0;
+    font-weight: bold;
+    justify-content: flex-end;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  .page-likes__thumb {
+    margin-right: 10%;
+    font-size: 0;
+    min-height: 20px;
+    min-width: 22px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-like.svg);
+
+  }
+  .page-likes__number{
+    margin-top: 5%;
+
   }
 }

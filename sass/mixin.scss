@@ -5,9 +5,10 @@
     clear: both;
   }
 }
-@mixin container {
+@mixin container($width) {
   position: relative;
-  width: 320px;
+  max-width: $width; 
+  width: 100%;
   margin: auto;
   background-color: #fff;
 }

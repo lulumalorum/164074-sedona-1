@@ -1,66 +1,213 @@
-.page-features {
-  @include container;
-  color: white;
-  text-transform: uppercase;
-  background: $blue;
-  text-align: center;
-  padding-top: 56px;
-  padding-bottom: 50px;
-  position: relative;
+@media (min-width: 320px) {
+  .page-features {
+    @include container(320px);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .page-features__left {
+    padding-top: 42px;
+    padding-bottom: 45px;
+    background-color: $blue;
+  }
+  .page-features__name {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .page-features__name--white {
+    color: $white;
+  }
+  .page-features__number {
+    margin-top: 20px;
+  }
+  .page-features__number--white {
+    color: $white;
+  }
+  .page-features__text {
+    margin: auto;
+    width: 279px;
+    margin-top: 30px;
+  }
+  .page-features__text--white {
+    color: $white;
+  }
+  .page-features__right {
+    background-color: $blue;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+  .page-features__withicon {
+    padding-top: 40px;
+    text-align: left;
+    margin-left: 24px;
+  }
+  .page-features__withicon .page-features__text {
+    width: 66%;
+  }
+  .page-features__gray {
+    background-color: $gray;
+    padding-top: 48px;
+
+  }
+  .page-features__text--gray{
+    padding-bottom: 50px;
+    border-bottom: 2px solid $darkgray;
+  }
+  .page-features__text--gray:last-child{
+
+  }
+  .page-features__withicon--home::before {
+    content: " ";
+    position: absolute;
+    min-height: 40px;
+    min-width: 42px;
+    background-image: url("../img/icon-house.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 42px 40px;
+  }
+  .page-features__withicon--gift::before {
+    content: " ";
+    position: absolute;
+    min-height: 40px;
+    min-width: 42px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 42px 40px;
+  }
+  .page-features__withicon--burger::before {
+    content: " ";
+    position: absolute;
+    min-height: 40px;
+    min-width: 42px;
+    background-image: url("../img/icon-burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 42px 40px;
+  }
+  .page-features__text--withicon{
+    margin: 0;
+    margin-left: 60px;
+  }
+  .page-features__name--big{
+    margin-left: 60px;
+  }
+  .page-features__withicon:last-child{
+    padding-bottom: 32px;
+  }
 }
-.page-features__name {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  margin-bottom: 18px;
-  color: $black;
+@media (min-width: 768px) {
+  .page-features {
+    @include container(768px);
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+  }
+  .page-features__left {
+    width: 33%;
+    background-color: $blue;
+    padding-top: 32px;
+    padding-bottom: 38px;
+  }
+  .page-features__name {
+    width: 150px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 18px;
+  }
+  .page-features__name--white {
+    color: $white;
+  }
+  .page-features__number {
+    margin-top: 20px;
+  }
+  .page-features__number--white {
+    color: $white;
+  }
+  .page-features__text {
+    margin: auto;
+    width: 163px;
+    margin-top: 30px;
+  }
+  .page-features__text--white {
+    color: $white;
+  }
+  .page-features__right {
+    background-color: $blue;
+    width: 33%;
+    padding-bottom: 38px;
+  }
+  .page-features__withicon {
+    margin: 0;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 68px;
+    width: 33.33%;
+  }
+  .page-features__withicon .page-features__text{
+    width: 64%;
+    margin: auto;
+  }
+  .page-features__withicon--home::before {
+    content: " ";
+    display: flex;
+    position: static;
+    min-height: 78px;
+    min-width: 80px;
+    background-image: url("../img/icon-house.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 78px;
+    padding-bottom: 30px;
+  }
+  .page-features__withicon--gift::before {
+    content: " ";
+    display: flex;
+    position: static;
+    min-height: 78px;
+    min-width: 80px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 78px;
+    padding-bottom: 30px;
+  }
+  .page-features__withicon--burger::before {
+    content: " ";
+    display: flex;
+    position: static;
+    min-height: 78px;
+    min-width: 80px;
+    background-image: url("../img/icon-burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 78px;
+    padding-bottom: 30px;
+  }
+  .page-features__gray {
+    width: 33.34%;
+  }
+  .page-features__text--gray{
+    border-bottom: none;
+  }
+  .page-features__text--withicon
+  {
+    width: 63%;
+    margin: auto;
+  }
 }
-.page-features__name--white {
-  color: white;
-}
-.page-features__number {
-  font-size: 14px;
-  line-height: 21px;
-  color: $black;
-}
-.page-features__number--white {
-  color: white;
-}
-.page-features__text {
-  margin-top: 23px;
-  font-size: 14px;
-  line-height: 21px;
-  color: $black;
-}
-.page-features__text--white {
-  color: $white;
-}
-.page-features--withicon {
-  background-color: white;
-  padding: 0;
-  text-align: left;
-  padding-left: 70px;
-  padding-top: 40px;
-  margin: 0;
-}
-.page-features__icon {
-  position: absolute;
-  min-width: 40px;
-  margin-left:-52px;
-  margin-top: -5px;
-}
-.page-features__icon--burger {
-  background-image: url("../img/icon-burger.svg");
-  min-height: 35px;
-}
-.page-features__icon--home {
-  background-image: url("../img/icon-house.svg");
-  min-height: 38px;
-}
-.page-features__icon--souvenir {
-  background-image: url("../img/icon-gift.svg");
-  min-height: 38px;
-}
-.page-features--gray {
-  background-color: $gray;
+@media (min-width: 1200px) {
+  .page-features {
+    @include container(1200px);
+  }
+ .page-features__right{
+   width: 35%;
+ }
+ .page-features__left{
+   width: 35%;
+ }
+
 }

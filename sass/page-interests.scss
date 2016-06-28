@@ -1,21 +1,51 @@
-.page-interests {
-  @include conteiner;
-  color: $black;
-  text-transform: uppercase;
-  background: $white;
-  text-align: center;
-  margin-top: 31px;
-  margin-bottom: 40px;
+@media (min-width: 320px) {
+  .page-interests {
+    @include container(320px);
+    color: $black;
+    text-transform: uppercase;
+    background: $white;
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 40px;
+  }
+  .page-interests__name {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 31px;
+  }
+  .page-intersts__text {
+    font-size: 14px;
+    line-height: 24px;
+    width: 280px;
+    margin: auto;
+  }
 }
-.page-interests__name {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
-  margin-bottom: 31px;
+@media (min-width: 768px) {
+  .page-interests {
+    @include container(768px);
+    color: $black;
+    text-transform: uppercase;
+    background: $white;
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 40px;
+  }
+  .page-interests__name {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 31px;
+  }
+  .page-intersts__text {
+    font-size: 14px;
+    line-height: 24px;
+    width: 458px;
+    margin: auto;
+  }
 }
-.page-intersts__text {
-  font-size: 14px;
-  line-height: 24px;
-  width: 280px;
-  margin: auto;
+@media (min-width: 1200px) {
+  .page-interests {
+    @include container(1200px);
+  }
 }

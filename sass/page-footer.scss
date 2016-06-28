@@ -1,41 +1,111 @@
-.page-footer {
-  @include conteiner;
-  margin-top: 40px;
-  display: block;
-  text-align: center;
-  padding-bottom: 20px;
-  a {
+@media (min-width: 320px) {
+  .page-footer {
+    @include container(320px);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  .page-footer__wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-footer__visit {
+    font-size: 21px;
+    line-height: 26px;
+    text-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .page-footer__developers {
+
+    font-size: 14px;
+    text-transform: uppercase;
     text-decoration: none;
-    color: $black;
+    text-transform: uppercase;
+  }
+  .page-footer__imgdevelopers {
+    text-transform: uppercase;
+    min-height: 49px;
+    width: 46px;
+    display: inline-block;
+    background-image: url("../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    span {
+      display: none;
+    }
+  }
+  .page-footer__copyright{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
-.page-footer__visit {
-  font-size: 21px;
-  line-height: 26px;
-  text-weight: bold;
-  text-transform: uppercase;
+@media (min-width: 768px) {
+  .page-footer {
+    @include container(768px);
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  .page-footer__wrap{
+    width: 86.4%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .page-footer__visit {
+    width: 37.33%;
+    text-align:left;
+
+  }
+  .page-footer__copyright{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40.33%;
+    justify-content: flex-end;
+  }
+  .page-footer__developers {
+   margin-right: 4%;
+   text-align: right;
+  }
+  .page-footer__imgdevelopers {
+    background-image: url("../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    span {
+      display: none;
+    }
+  }
 }
-.page-footer__developers {
-  display: inline-block;
-  font-size: 14px;
-  text-transform: uppercase;
-  width: 74px;
-  min-height: 39px;
-  padding-top: 15px;
-  margin-right: 20px;
-  vertical-align: bottom;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.page-footer__imgdevelopers {
-  text-transform: uppercase;
-  min-height: 49px;
-  width: 46px;
-  display: inline-block;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  span {
-    display: none;
+@media (min-width: 1200px){
+  .page-footer {
+    @include container(1200px);
+    }
+  .page-footer__wrap{
+    width: 95.4%;
+  }
+  .page-footer__copyright{
+    width: 47.33%;
+  }
+  .page-footer__visit{
+    width: 41%;
+    padding-left: 56px;
   }
 }

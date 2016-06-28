@@ -1,117 +1,196 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="page-container">
-      <header class="page-header">
-        <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <a class="main-nav__toogle">Открыть меню</a>
-          <div class="main-nav__wrapper">
-            <a class="main-nav__cancel">Закрыть меню</a>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a>Фото и видео</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">Форма отзыва</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">HTML academy</a>
-              </li>
-            </ul>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="page-header">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a>Главная</a>
+              <button class="main-nav__cancel">Закрыть</button>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--logo">
+              <a href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="page-logo" src="img/logo-sedona-mobile.svg" alt="logo-small"></picture>
+              </a>
+              <button class="main-nav__toogle">Открыть</button>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="page-title">
+      <div class="page-title__imgsedona">
+
+      </div>
+      <div class="page-title__triangle">
+
+      </div>
+    </div>
+    <div class="page-welcomemessage">
+      <div class="page-welcomemessage__title">
+        Фото и видео
+      </div>
+      <p class="page-welcomemessage__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    </div>
+    <div class="page-photoblock">
+      <div class="page-photoblock__center">
+        <div class="page-photoblock__item  page-photoblock__item--big">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="page-photoblock__img  page-photoblock__img--big" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x">
+          </picture>
+          <div class="page-photoblock__wrapper">
+            <div class="page-photoblock__authorship">
+              <div class="page-photoblock__title">
+                Неродные просторы
+              </div>
+              <div class="page-photoblock__author">
+                Автор фото:Борис
+              </div>
+            </div>
+            <div class="page-likes">
+              <a class="page-likes__thumb" href="#"><span>Палец вверх</span></a>
+              <span class="page-likes__number">254</span>
+            </div>
           </div>
-          <a href="index.html"><img class="page-logo" src="img/logo-sedona-mobile.svg" height="83" width="103" alt="logo-small"></a>
-        </nav>
-      </header>
-      <h1 class="page-title">
-        Sedona
-      </h1>
-      <div class="page-welcomemessage">
-        <div class="page-welcomemessage__title">
-          Фото и видео
         </div>
-        <p class="page-welcomemessage__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="page-photoblock__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img class="page-photoblock__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x">
+          </picture>
+          <div class="page-photoblock__wrapper">
+            <div class="page-photoblock__authorship">
+              <div class="page-photoblock__title">
+                Местная растительность
+              </div>
+              <div class="page-photoblock__author">
+                Автор фото:Сергей
+              </div>
+            </div>
+            <div class="page-likes">
+              <a class="page-likes__thumb" href="#"><span>Палец вверх</span></a>
+              <span class="page-likes__number">254</span>
+            </div>
+          </div>
+        </div>
+        <div class="page-photoblock__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img class="page-photoblock__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x">
+          </picture>
+          <div class="page-photoblock__wrapper">
+            <div class="page-photoblock__authorship">
+              <div class="page-photoblock__title">
+                Дорога на север
+              </div>
+              <div class="page-photoblock__author">
+                Автор фото:Петр
+              </div>
+            </div>
+            <div class="page-likes">
+              <a class="page-likes__thumb" href="#"><span>Палец вверх</span></a>
+              <span class="page-likes__number">254</span>
+            </div>
+          </div>
+        </div>
+        <div class="page-photoblock__item ">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+            <img class="page-photoblock__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x">
+          </picture>
+          <div class="page-photoblock__wrapper">
+            <div class="page-photoblock__authorship">
+              <div class="page-photoblock__title">
+                Мост дьявола
+              </div>
+              <div class="page-photoblock__author">
+                Автор фото:Антон
+              </div>
+            </div>
+            <div class="page-likes">
+              <a class="page-likes__thumb" href="#"><span>Палец вверх</span></a>
+              <span class="page-likes__number">254</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="page-photoblock">
-        <img class="page-photoblock__img" src="img/photo-1-mobile@1x.jpg" height="280" width="280" alt="Неродные просторы">
-        <div class="page-photoblock__title">
-          Неродные просторы
-        </div>
-        <div class="page-photoblock__author">
-          Автор фото:Борис
-        </div>
-        <div class="page-likes">
-          <a class="page-likes__thumb" href="#">Палец вверх</a>
-          <span class="page-likes_number">1350</span>
+    </div>
+
+
+    <div class="page-video">
+      <div class="page-video__title">
+        Все еще сомневаетесь?
+      </div>
+      <p class="page-video_text">
+        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
+      <div class="page-video__videoplayer">
+        <div class="page-video__nav">
+          <div class="page-video__reload">
+          </div>
+          <div class="page-video__scroll">
+            <div class="page-video__timeline">
+
+            </div>
+            <div class="page-video__cursor">
+
+            </div>
+          </div>
+
+          <div class="page-video__buttons">
+            <div class="page-video__subtitles">
+
+            </div>
+            <div class="page-video__fullscreen">
+
+            </div>
+          </div>
         </div>
       </div>
-      <div class="page-photoblock">
-        <img class="page-photoblock__img" src="img/photo-2-mobile@1x.jpg" height="280" width="280" alt="Неродные просторы">
-        <div class="page-photoblock__title">
-          Местная растительность
-        </div>
-        <div class="page-photoblock__author">
-          Автор фото:Сергей
-        </div>
-        <div class="page-likes">
-          <a class="page-likes__thumb" href="#">Палец вверх</a>
-          <span class="page-likes_number">143</span>
-        </div>
-      </div>
-      <div class="page-photoblock">
-        <img class="page-photoblock__img" src="img/photo-3-mobile@1x.jpg" height="280" width="280" alt="Неродные просторы">
-        <div class="page-photoblock__title">
-          Дорога на север
-        </div>
-        <div class="page-photoblock__author">
-          Автор фото:Петр
-        </div>
-        <div class="page-likes">
-          <a class="page-likes__thumb" href="#">Палец вверх</a>
-          <span class="page-likes_number">96</span>
-        </div>
-      </div>
-      <div class="page-photoblock">
-        <img class="page-photoblock__img" src="img/photo-4-mobile@1x.jpg" height="280" width="280" alt="Неродные просторы">
-        <div class="page-photoblock__title">
-          Мост дьявола
-        </div>
-        <div class="page-photoblock__author">
-          Автор фото:Антон
-        </div>
-        <div class="page-likes">
-          <a class="page-likes__thumb" href="#">Палец вверх</a>
-          <span class="page-likes_number">254</span>
-        </div>
-      </div>
-      <div class="page-video">
-        <div class="page-video__title">
-          Все еще сомневаетесь?
-        </div>
-        <p class="page-video_text">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
-        <video class="page-video__videoplayer" width="280" height="203" poster="img">
-          <source src="img/video-mobile@1x.jpg" type="video/mp4">
-        </video>
-      </div>
-      <footer class="page-footer">
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__wrap">
         <a class="page-footer__visit" href="#">#Visitsedona</a>
         <div class="page-social">
-          <a class="page-social__icon  page-social_icon--twitter" href="#">Twitter</a>
-          <a class="page-social__icon  page-social_icon--fb" href="#">Facebook</a>
-          <a class="page-social__icon  page-social_icon--youtube" href="#">Youtube</a>
+          <a class="page-social__icon  page-social__icon--twitter" href="#"><span>Twitter</span></a>
+          <a class="page-social__icon  page-social__icon--fb" href="#"><span>Facebook</span></a>
+          <a class="page-social__icon  page-social__icon--youtube" href="#"><span>Youtube</span></a>
         </div>
-        <span class="page-footer__developers">Разработано</span>
-        <a class="page-footer__imgdevelopers" href="#">HtmlAcademy</a>
-      </footer>
-    </div>
-  </body>
+        <div class="page-footer__copyright">
+          <span class="page-footer__developers">Разработано</span>
+          <a class="page-footer__imgdevelopers" href="#"><span>HtmlAcademy</span></a>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
