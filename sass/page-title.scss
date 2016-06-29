@@ -1,17 +1,18 @@
 @media (min-width: 320px) {
   .page-title {
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .15), 2px 2px 2px rgba(0, 0, 0, .15);
     @include container(320px);
     min-height: 157px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-mobile@2x.jpg");
     }
     background-repeat: no-repeat;
     background-size: cover;
-     }
-  .page-title__imgsedona{
+  }
+  .page-title__imgsedona {
     position: absolute;
-    left:50%;
+    left: 50%;
     top: 48%;
     transform: translate(-50%, -50%);
     height: 40px;
@@ -21,7 +22,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .page-title__triangle{
+  .page-title__triangle {
     position: absolute;
     height: 28px;
     width: 100%;
@@ -30,7 +31,6 @@
     background-repeat: no-repeat;
     background-size: 334px;
     bottom: 0;
-
   }
 }
 @media (min-width: 768px) {
@@ -38,24 +38,23 @@
     @include container(768px);
     min-height: 294px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
-    }
-  .page-title__imgsedona{
+  }
+  .page-title__imgsedona {
     top: 50%;
     height: 81px;
     width: 463px;
-    }
-    .page-title__triangle{
-      background-image: url("../img/bg-intro-triangle-desktop.svg");
-       height: 62px;
-       bottom: 0;
-       background-size: 1203px;
-    }
-
+  }
+  .page-title__triangle {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    height: 62px;
+    bottom: 0;
+    background-size: 1203px;
+  }
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .page-title {
     @include container(1200px);
     min-height: 303px;

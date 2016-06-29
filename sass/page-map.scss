@@ -6,6 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .15), 2px 2px 2px rgba(0, 0, 0, .15);
   }
 }
 @media (min-width: 768px) {
@@ -18,5 +19,5 @@
   .page-map {
     @include container(1200px);
     background-image: url("../img/bg-map-desktop@1x.jpg");
-    }
+  }
 }

@@ -4,6 +4,7 @@
     background-color: white;
     padding-top: 43px;
     padding-bottom: 50px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .15), 2px 2px 2px rgba(0, 0, 0, .15);
   }
   .page-info__determ {
     width: 280px;
@@ -34,10 +35,10 @@
   }
   .page-info__determ {
     width: 487px;
-    }
+  }
   .page-info__reasons {
     width: 487px;
-    }
+  }
 }
 @media (min-width: 1200px) {
   .page-info {

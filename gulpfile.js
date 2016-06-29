@@ -35,9 +35,16 @@ gulp.task("style", function() {
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
-    // .pipe(server.reload({stream: true}));
+    .pipe(server.reload({stream: true}));
 });
 
+gulp.task('sass', function () {
+  gulp.src('path/to/input.scss')
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }))
+    .pipe(gulp.dest('path/to/output.css'));
+});
 
 gulp.task("images", function() {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
@@ -62,9 +69,6 @@ gulp.task("symbols", function() {
 gulp.task("serve", function() {
   server.init({
     server: "build",
-    notify: false,
-    open: true,
-    ui: false
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);

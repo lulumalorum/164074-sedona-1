@@ -1,8 +1,9 @@
 @media (min-width: 320px) {
-  .page-photoblock{
+  .page-photoblock {
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .15), 2px 2px 2px rgba(0, 0, 0, .15);
     @include container(320px);
-      }
-  .page-photoblock__item{
+  }
+  .page-photoblock__item {
     padding-top: 22px;
   }
   .page-photoblock__center {
@@ -52,7 +53,7 @@
     }
     .page-photoblock__img--big {
       width: 100%;
-      }
+    }
     .page-photoblock__title--big {
       margin-top: 420px;
     }
@@ -61,13 +62,10 @@
       width: 100%;
     }
     .page-photoblock__title {
-
       text-transform: uppercase;
       font-weight: bold;
     }
-    .page-photoblock__author {
-
-    }
+    .page-photoblock__author {}
     .page-photoblock__wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -87,25 +85,25 @@
     }
   }
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .page-photoblock {
     @include container(1200px);
-    }
-    .page-photoblock__item{
-      color: $white;
-      position: relative;
-      width: 33.33%;
-    }
-    .page-photoblock__item--big {
-      width: 100%;
-      }
-    .page-photoblock__center{
-      width: 100%;
-    }
-    .page-photoblock__wrapper{
-      background-color: rgba(0,0,0,0.4);
-      bottom: 0;
-      position: absolute;
-      width: 100%;
-    }
+  }
+  .page-photoblock__item {
+    color: $white;
+    position: relative;
+    width: 33.33%;
+  }
+  .page-photoblock__item--big {
+    width: 100%;
+  }
+  .page-photoblock__center {
+    width: 100%;
+  }
+  .page-photoblock__wrapper {
+    background-color: rgba(0,0,0,0.4);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
 }

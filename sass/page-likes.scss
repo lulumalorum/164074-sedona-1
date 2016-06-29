@@ -1,7 +1,6 @@
 @media (min-width: 320px) {
   .page-likes {
     display: flex;
-
     font-weight: bold;
     a {
       text-decoration: none;
@@ -9,16 +8,21 @@
     }
   }
   .page-likes__thumb {
+    display: flex;
+    align-items: center;
     font-size: 0;
     min-height: 20px;
     width: 22px;
-    background-repeat: no-repeat;
-    background-image: url(../img/icons/icon-like.svg);
-    }
-    .page-likes__number{
-      margin-left: 5%;
-      margin-top: 1%;
-    }
+  }
+  .page-likes__number {
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  .page-likes__icon {
+    width: 27px;
+    height: 21px;
+    fill: #b2b2b2;
+  }
 }
 @media (min-width: 768px) {
   .page-likes {
@@ -35,12 +39,13 @@
     font-size: 0;
     min-height: 20px;
     min-width: 22px;
-    background-repeat: no-repeat;
-    background-image: url(../img/icons/icon-like-desktop.svg);
-
   }
-  .page-likes__number{
-    margin-top: 5%;
-
+  .page-likes__number {
+    margin-top: 20%;
+  }
+}
+@media (min-width: 1200px) {
+  .page-likes__icon {
+    fill: $white;
   }
 }

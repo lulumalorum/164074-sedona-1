@@ -3,6 +3,7 @@
     @include container(320px);
     background-color: $white;
     padding-bottom: 41px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .15), 2px 2px 2px rgba(0, 0, 0, .15);
   }
   .page-foundhotel__button {
     background-color: $blue;
@@ -29,7 +30,6 @@
   }
   .page-foundhotel__button {
     width: 458px;
-    
   }
 }
 @media (min-width: 1200px) {

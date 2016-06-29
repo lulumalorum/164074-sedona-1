@@ -3,6 +3,7 @@
     @include container(320px);
     padding-top: 40px;
     padding-bottom: 20px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .15), 2px 2px 2px rgba(0, 0, 0, .15);
     a {
       text-decoration: none;
       color: $black;
@@ -31,13 +32,14 @@
     text-transform: uppercase;
     min-height: 49px;
     width: 46px;
-    display: inline-block;
-    background-image: url('../img/icons/logo-htmlacademy.svg');
-    &:hover{
-      background-image: url('../img/icons/logo-htmlacademy-blue.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      fill: $blue;
     }
-    &:focus{
-      background-image: url('../img/icons/logo-htmlacademy-gray.svg');
+    &:focus {
+      fill: $htmlacademy;
     }
     background-repeat: no-repeat;
     background-position: center;
@@ -50,6 +52,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+  }
+  .page-footer__svg {
+    width: 30px;
+    height: 35px;
   }
 }
 @media (min-width: 768px) {
