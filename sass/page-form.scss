@@ -1,7 +1,7 @@
 @media (min-width: 320px) {
   .page-form__wrap {
-    display: flex;
     width: 100%;
+    max-height: 144px;
 margin: auto;
   }
   .page-form__btn {
@@ -36,7 +36,7 @@ margin: auto;
     width: 100%;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 5%;
+    max-height: 173px;
   }
   .page-form__requiredfields {
     display: flex;
