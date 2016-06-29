@@ -1,9 +1,13 @@
 @media (min-width: 320px) {
+  .page-form__wrap {
+    display: flex;
+    width: 100%;
+margin: auto;
+  }
   .page-form__btn {
     border: none;
-    width: 91%;
+    width: 100%;
     min-height: 58px;
-    margin-left: 4.5%;
     margin-top: 15%;
     color: $white;
     background-color: $blue;
@@ -28,6 +32,7 @@
   }
   .page-form__wrap {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     align-items: baseline;
     justify-content: space-between;
@@ -35,10 +40,12 @@
   }
   .page-form__requiredfields {
     display: flex;
+    width: 50%;
+    justify-content: flex-end;
   }
 }
 @media (min-width: 1200px) {
   .page-form__btn {
-    width: 479px;
+    width: 50%;
   }
 }

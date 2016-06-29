@@ -8,7 +8,7 @@
       color: $black;
     }
   }
-  .page-footer__wrap{
+  .page-footer__wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,6 @@
     font-weight: bold;
   }
   .page-footer__developers {
-
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
@@ -33,14 +32,20 @@
     min-height: 49px;
     width: 46px;
     display: inline-block;
-    background-image: url("../img/logo-htmlacademy.svg");
+    background-image: url('../img/icons/logo-htmlacademy.svg');
+    &:hover{
+      background-image: url('../img/icons/logo-htmlacademy-blue.svg');
+    }
+    &:focus{
+      background-image: url('../img/icons/logo-htmlacademy-gray.svg');
+    }
     background-repeat: no-repeat;
     background-position: center;
     span {
       display: none;
     }
   }
-  .page-footer__copyright{
+  .page-footer__copyright {
     padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +64,7 @@
       color: $black;
     }
   }
-  .page-footer__wrap{
+  .page-footer__wrap {
     width: 86.4%;
     margin: auto;
     display: flex;
@@ -69,10 +74,9 @@
   }
   .page-footer__visit {
     width: 37.33%;
-    text-align:left;
-
+    text-align: left;
   }
-  .page-footer__copyright{
+  .page-footer__copyright {
     margin: 0;
     padding: 0;
     display: flex;
@@ -82,11 +86,10 @@
     justify-content: flex-end;
   }
   .page-footer__developers {
-   margin-right: 4%;
-   text-align: right;
+    margin-right: 4%;
+    text-align: right;
   }
   .page-footer__imgdevelopers {
-    background-image: url("../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
     background-position: center;
     span {
@@ -94,17 +97,17 @@
     }
   }
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .page-footer {
     @include container(1200px);
-    }
-  .page-footer__wrap{
+  }
+  .page-footer__wrap {
     width: 95.4%;
   }
-  .page-footer__copyright{
+  .page-footer__copyright {
     width: 47.33%;
   }
-  .page-footer__visit{
+  .page-footer__visit {
     width: 41%;
     padding-left: 56px;
   }

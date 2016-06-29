@@ -71,6 +71,7 @@
     }
   }
   .page-image--right {
+        min-height: 274px;
     width: 70%;
   }
   .page-image--left {
@@ -101,7 +102,7 @@
   .page-image__triangle {
     background-image: url("../img/bg-intro-triangle-desktop.svg");
     min-height: 60px;
-    
+
     }
   .page-image__sedonatext {
     width: 37%;

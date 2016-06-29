@@ -1,11 +1,9 @@
-  @media (min-width: 320px) {
+@media (min-width: 320px) {
   .main-nav {
     @include container(320px);
     min-height: 56px;
     background-color: #81b3d2;
     text-align: center;
-
-
     .main-nav__list {
       display: flex;
       flex-direction: column;
@@ -15,7 +13,6 @@
       padding: 0;
       margin: 0;
       list-style: none;
-
     }
     .main-nav__item {
       position: relative;
@@ -30,21 +27,19 @@
       border-bottom: 1px solid $darkblue;
       border-top: 1px solid $lightblue;
       justify-content: center;
-
       color: #ffffff;
     }
-    .main-nav__item:nth-child(1){
+    .main-nav__item:nth-child(1) {
       border-top: none;
     }
-    .main-nav__item--logo{
+    .main-nav__item--logo {
       padding-top: 0;
       max-height: 35px;
       z-index: 2;
-      order:5;
+      order: 5;
       background-color: $white;
       border-bottom: none;
       border-top: none;
-
     }
     .main-nav__cancel {
       border: none;
@@ -53,22 +48,21 @@
       min-height: 28px;
       min-width: 28px;
       right: 20px;
-      top:14px;
+      top: 14px;
       font-size: 0;
-      background-image: url(../img/icon-cross.svg);
+      background-image: url("../img/icons/icon-cross.svg");
       background-position: center;
       background-repeat: no-repeat;
-
     }
     .main-nav__toogle {
       border: none;
       background: none;
       position: absolute;
       min-height: 23px;
-      min-width:  23px;
+      min-width: 23px;
       right: 20px;
-      top:18px;
-      background-image: url(../img/icon-menu.svg);
+      top: 18px;
+      background-image: url("../img/icons/icon-menu.svg");
       background-repeat: no-repeat;
       color: #000;
       font-size: 0;
@@ -105,22 +99,22 @@
       border-bottom: none;
       border-top: none;
     }
-     .main-nav__item:nth-child(1){
-       order:1;
-     }
-     .main-nav__item:nth-child(2){
-       order: 2;
-     }
-      .main-nav__item--logo{
-      order:3;
+    .main-nav__item:nth-child(1) {
+      order: 1;
+    }
+    .main-nav__item:nth-child(2) {
+      order: 2;
+    }
+    .main-nav__item--logo {
+      order: 3;
       max-height: 56px;
       position: relative;
       z-index: 2;
     }
-    .main-nav__item:nth-child(4){
+    .main-nav__item:nth-child(4) {
       order: 4;
     }
-    .main-nav__item:nth-child(5){
+    .main-nav__item:nth-child(5) {
       order: 5;
     }
     a {
@@ -135,7 +129,7 @@
     display: none;
   }
 }
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .main-nav {
     @include container(1200px);
   }
