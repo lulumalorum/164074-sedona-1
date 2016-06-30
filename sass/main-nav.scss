@@ -15,15 +15,11 @@
       margin: 0;
       list-style: none;
     }
-    .main-nav{
-      &.main-nav--closed li:not(.main-nav__item--logo) {
-        display: none;
-      }
+    &.main-nav--closed li:not(.main-nav__item--logo) {
+      display: none;
     }
-    .main-nav {
-      &.main-nav--nojs .main-nav__toogle {
-        display: none;
-      }
+    &.main-nav--nojs .main-nav__toogle {
+      display: none;
     }
     .main-nav__item {
       position: relative;

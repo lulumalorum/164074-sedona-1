@@ -40,10 +40,10 @@ body {
     margin: 0;
     list-style: none; }
 
-  .main-nav .main-nav.main-nav--closed li:not(.main-nav__item--logo) {
+  .main-nav.main-nav--closed li:not(.main-nav__item--logo) {
     display: none; }
 
-  .main-nav .main-nav.main-nav--nojs .main-nav__toogle {
+  .main-nav.main-nav--nojs .main-nav__toogle {
     display: none; }
 
   .main-nav .main-nav__item {
@@ -1346,7 +1346,7 @@ body {
     text-transform: uppercase; }
 
   .page-video__title {
-    width: 50%;
+    width: 100%;
     margin: auto;
     font-size: 30px;
     line-height: 26px;
