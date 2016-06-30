@@ -263,6 +263,7 @@ body {
     min-height: 49px;
     width: 46px;
     display: flex;
+    font-size: 0;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
