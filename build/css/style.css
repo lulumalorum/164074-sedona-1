@@ -379,7 +379,8 @@ body {
     background-image: url("../img/text-sedona-index.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 280px 400px; }
+    background-size: 280px 228px;
+    top: 5%; }
 
   .page-info {
     position: relative;
