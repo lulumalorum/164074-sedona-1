@@ -3,7 +3,9 @@
 
 @font-face {
   font-family: Ptsans;
-  src: url(../fonts/ptsans.woff) format("woff"), url(../fonts/ptsans.woff2) format("woff2"); }
+  src: url(../fonts/ptsans.woff) format("woff"), url(../fonts/ptsans.woff2) format("woff2");
+  font-family: Ptsans Bold;
+  src: url(../fonts/ptsansbold.woff) format("woff"), url(../fonts/ptsansbold.woff2) format("woff2"); }
 
 body {
   font-family: 'Ptsans', Arial, sans-serif;
@@ -37,6 +39,12 @@ body {
     padding: 0;
     margin: 0;
     list-style: none; }
+
+  .main-nav .main-nav--closed li:not(.main-nav__item--logo) {
+    display: none; }
+
+  .main-nav .main-nav--nojs .main-nav__toogle {
+    display: none; }
 
   .main-nav .main-nav__item {
     position: relative;
@@ -733,7 +741,8 @@ body {
     line-height: 26px;
     text-transform: uppercase;
     font-weight: bold;
-    padding-bottom: 27px; }
+    padding-bottom: 27px;
+    font-family: PTsans Bold; }
 
   .page-formblock__item--contacts {
     position: relative; }
@@ -791,11 +800,6 @@ body {
     top: 0;
     right: -6%; }
 
-  .page-formblock__label--bold {
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 18px; }
-
   .page-formblock__item {
     width: 100%;
     padding-top: 50px; }
@@ -811,7 +815,7 @@ body {
     padding-top: 18px;
     font-size: 18px;
     line-height: 26px;
-    font-weight: bold;
+    font-family: Ptsans Bold;
     resize: none; }
 
   .page-formblock__textarea:focus {
@@ -882,6 +886,11 @@ body {
     color: red;
     font-size: 14px; }
 
+  .page-formblock__label--bold {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold; }
+
   .page-form__wrap {
     width: 100%;
     max-height: 144px;
@@ -896,7 +905,7 @@ body {
     background-color: #81b3d2;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px; }
 
   .page-form__requiredfields {
@@ -1444,7 +1453,7 @@ body {
     width: 50%;
     padding-bottom: 0; }
 
-  .page-formblock__item--impression::before {
+  .page-formblock__item--personaldata::before {
     content: "";
     display: block;
     width: 1px;
@@ -1453,7 +1462,7 @@ body {
     position: absolute;
     box-sizing: border-box;
     top: 14%;
-    right: 0; }
+    left: 0; }
 
   .page-formblock__item--contacts {
     position: relative;
@@ -1657,6 +1666,10 @@ body {
   .page-formblock__field--phone {
     margin-bottom: 30px; }
 
+  .page-formblock__label--bold {
+    text-transform: capitalize;
+    font-size: 18px; }
+
   .page-form__btn {
     margin: 0;
     width: 324px;
@@ -1715,6 +1728,9 @@ body {
     padding-top: 0;
     background-color: #e6e6e6;
     margin: 0; }
+
+  .page-photoblock__item::before {
+    display: none; }
 
   .page-photoblock__item--big {
     width: 100%;
@@ -1952,7 +1968,7 @@ body {
     justify-content: space-between; }
 
   .page-formblock__group3 .page-formblock__group:last-child {
-    flex-shrink: 1.4; }
+    flex-shrink: 1.2; }
 
   .page-formblock__error {
     position: absolute;
@@ -1961,6 +1977,10 @@ body {
 
   .page-formblock__title span {
     width: 34%; }
+
+  .page-formblock__label--bold {
+    text-transform: capitalize;
+    font-size: 18px; }
 
   .page-form__btn {
     width: 50%; }

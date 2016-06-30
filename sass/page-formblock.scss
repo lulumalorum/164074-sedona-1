@@ -33,6 +33,7 @@
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 27px;
+    font-family: PTsans Bold;
   }
   .page-formblock__item--contacts {
     position: relative;
@@ -90,11 +91,7 @@
     top: 0;
     right: -6%;
   }
-  .page-formblock__label--bold {
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 18px;
-  }
+
   .page-formblock__item {
     width: 100%;
     padding-top: 50px;
@@ -110,7 +107,7 @@
     padding-top: 18px;
     font-size: 18px;
     line-height: 26px;
-    font-weight: bold;
+    font-family: Ptsans Bold;
     resize: none;
     &:focus {
       outline: none;
@@ -135,6 +132,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
   input[type="checkbox"],
   input[type="radio"] {
     display: none;
@@ -182,6 +180,11 @@
     color: red;
     font-size: 14px;
   }
+  .page-formblock__label--bold{
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+}
 }
 @media (min-width: 768px) {
   .page-formblock {
@@ -204,8 +207,8 @@
     width: 50%;
     padding-bottom: 0;
   }
-  .page-formblock__item--impression {
-    &::before {
+  .page-formblock__item--personaldata::before{
+
       content: "";
       display: block;
       width: 1px;
@@ -214,8 +217,7 @@
       position: absolute;
       box-sizing: border-box;
       top: 14%;
-      right: 0;
-    }
+      left:0;
   }
   .page-formblock__item--contacts {
     position: relative;
@@ -420,6 +422,10 @@
   .page-formblock__field--phone {
     margin-bottom: 30px;
   }
+  .page-formblock__label--bold{
+  text-transform: capitalize;
+  font-size: 18px;
+}
 }
 @media (min-width: 1200px) {
   .page-formblock {
@@ -471,7 +477,7 @@
     justify-content: space-between;
   }
   .page-formblock__group3 .page-formblock__group:last-child {
-    flex-shrink: 1.4;
+    flex-shrink: 1.2;
   }
   .page-formblock__error {
     position: absolute;
@@ -481,4 +487,8 @@
   .page-formblock__title span {
     width: 34%;
   }
+  .page-formblock__label--bold{
+  text-transform: capitalize;
+  font-size: 18px;
+}
 }

@@ -58,6 +58,9 @@
       padding-top: 0;
       background-color: $darkgray;
       margin: 0;
+      &::before{
+        display: none;
+      }
     }
     .page-photoblock__item--big {
       width: 100%;
