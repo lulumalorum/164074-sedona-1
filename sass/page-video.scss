@@ -70,6 +70,7 @@
     background-color: $gray;
     min-width: 25px;
     max-height: 66px;
+    align-items: center;
   }
   .page-video__timeline {
     width: 80%;
@@ -98,6 +99,7 @@
   }
   .page-video__icon {
     fill: $darkgray2;
+    height: 64px;
   }
   .page-video__icon--reload {
     width: 19px;
