@@ -422,10 +422,8 @@ body {
     width: 48%;
     justify-content: space-between;
     margin: 0;
-    max-height: 49px; }
-
-  .page-social span {
-    display: none; }
+    max-height: 49px;
+    font-size: 0; }
 
   .page-social__icon {
     display: flex;
@@ -520,10 +518,23 @@ body {
     max-width: 320px;
     width: 100%;
     margin: auto;
-    background-color: #fff; }
+    background-color: #fff;
+    overflow: hidden; }
 
   .page-photoblock__item {
-    padding-top: 22px; }
+    padding-top: 22px;
+    position: relative; }
+
+  .page-photoblock__item::before {
+    content: "";
+    width: 200vw;
+    height: 1px;
+    background: #e5e5e5;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    z-index: 10; }
 
   .page-photoblock__center {
     display: flex;
@@ -547,7 +558,7 @@ body {
   .page-photoblock__wrapper {
     display: flex;
     padding-top: 23px;
-    padding-bottom: 23px;
+    padding-bottom: 20px;
     flex-direction: column; }
 
   .page-likes {
@@ -690,7 +701,8 @@ body {
     max-width: 320px;
     width: 100%;
     margin: auto;
-    background-color: #fff; }
+    background-color: #fff;
+    overflow: hidden; }
 
   .page-formblock__wrap {
     width: 87.5%;
@@ -698,10 +710,25 @@ body {
     display: flex;
     flex-wrap: wrap; }
 
+  .page-formblock__item {
+    position: relative;
+    padding-bottom: 20px; }
+
+  .page-formblock__item::before {
+    content: "";
+    width: 200vw;
+    height: 1px;
+    background: #e5e5e5;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -50%;
+    z-index: 10; }
+
   .page-formblock__title {
     display: flex;
     justify-content: center;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
     font-weight: bold;
@@ -765,7 +792,8 @@ body {
 
   .page-formblock__label--bold {
     font-weight: bold;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-size: 18px; }
 
   .page-formblock__item {
     width: 100%;
@@ -780,7 +808,7 @@ body {
     border: none;
     min-height: 160px;
     padding-top: 18px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     font-weight: bold;
     resize: none; }
@@ -848,10 +876,10 @@ body {
 
   .page-formblock__error {
     position: absolute;
-    top: 63%;
+    top: 58%;
     left: 5%;
     color: red;
-    font-size: 12px; }
+    font-size: 14px; }
 
   .page-form__wrap {
     width: 100%;
@@ -975,11 +1003,11 @@ body {
     text-transform: uppercase;
     background: #fefefe;
     text-align: center;
-    padding-top: 31px;
+    padding-top: 61px;
     padding-bottom: 40px; }
 
   .page-interests__name {
-    font-size: 21px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 26px;
     margin-bottom: 31px; }
@@ -1046,6 +1074,9 @@ body {
     width: 64%;
     margin: auto; }
 
+  .page-features__withicon--home {
+    order: 1; }
+
   .page-features__withicon--home::before {
     content: " ";
     display: flex;
@@ -1058,6 +1089,9 @@ body {
     background-size: 80px 78px;
     padding-bottom: 30px; }
 
+  .page-features__withicon--gift {
+    order: 3; }
+
   .page-features__withicon--gift::before {
     content: " ";
     display: flex;
@@ -1069,6 +1103,9 @@ body {
     background-repeat: no-repeat;
     background-size: 80px 78px;
     padding-bottom: 30px; }
+
+  .page-features__withicon--burger {
+    order: 2; }
 
   .page-features__withicon--burger::before {
     content: " ";
@@ -1216,9 +1253,6 @@ body {
     justify-content: space-between;
     margin: 0;
     max-height: 49px; }
-
-  .page-social span {
-    display: none; }
 
   .page-social__icon {
     margin: 0;
@@ -1392,6 +1426,12 @@ body {
     margin: auto;
     background-color: #fff; }
 
+  .page-formblock__item::before {
+    display: none; }
+
+  .page-formblock__radiobutton {
+    font-size: 18px; }
+
   .page-formblock__wrap {
     width: 86.4%;
     margin: auto;
@@ -1400,7 +1440,8 @@ body {
     padding-bottom: 50px; }
 
   .page-formblock__item {
-    width: 50%; }
+    width: 50%;
+    padding-bottom: 0; }
 
   .page-formblock__item--impression::before {
     content: "";
@@ -1499,7 +1540,7 @@ body {
   .page-formblock__title {
     width: 92%;
     display: block;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 26px;
     text-align: left;
     text-transform: uppercase;
@@ -1563,10 +1604,6 @@ body {
   .page-formblock__label--long {
     margin-left: 18px; }
 
-  .page-formblock__label--bold {
-    font-weight: bold;
-    text-transform: capitalize; }
-
   .page-formblock__item--personaldata {
     width: 50%;
     display: flex;
@@ -1586,7 +1623,8 @@ body {
     margin: 0;
     width: 97%;
     padding-top: 2%;
-    padding-left: 3%; }
+    padding-left: 3%;
+    font-size: 18px; }
 
   fieldset {
     border-style: hidden;

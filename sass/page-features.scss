@@ -150,41 +150,50 @@
     width: 64%;
     margin: auto;
   }
-  .page-features__withicon--home::before {
-    content: " ";
-    display: flex;
-    position: static;
-    min-height: 78px;
-    min-width: 80px;
-    background-image: url("../img/icons/icon-house.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80px 78px;
-    padding-bottom: 30px;
+  .page-features__withicon--home {
+    order: 1;
+    &::before {
+      content: " ";
+      display: flex;
+      position: static;
+      min-height: 78px;
+      min-width: 80px;
+      background-image: url("../img/icons/icon-house.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80px 78px;
+      padding-bottom: 30px;
+    }
   }
-  .page-features__withicon--gift::before {
-    content: " ";
-    display: flex;
-    position: static;
-    min-height: 78px;
-    min-width: 80px;
-    background-image: url("../img/icons/icon-gift.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80px 78px;
-    padding-bottom: 30px;
+  .page-features__withicon--gift {
+    order: 3;
+    &::before {
+      content: " ";
+      display: flex;
+      position: static;
+      min-height: 78px;
+      min-width: 80px;
+      background-image: url("../img/icons/icon-gift.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80px 78px;
+      padding-bottom: 30px;
+    }
   }
-  .page-features__withicon--burger::before {
-    content: " ";
-    display: flex;
-    position: static;
-    min-height: 78px;
-    min-width: 80px;
-    background-image: url("../img/icons/icon-burger.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80px 78px;
-    padding-bottom: 30px;
+  .page-features__withicon--burger {
+    order: 2;
+    &::before {
+      content: " ";
+      display: flex;
+      position: static;
+      min-height: 78px;
+      min-width: 80px;
+      background-image: url("../img/icons/icon-burger.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80px 78px;
+      padding-bottom: 30px;
+    }
   }
   .page-features__gray {
     width: 33.34%;

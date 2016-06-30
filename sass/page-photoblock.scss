@@ -2,9 +2,22 @@
   .page-photoblock {
     box-shadow: -2px 2px 2px rgba(0, 0, 0, .15), 2px 2px 2px rgba(0, 0, 0, .15);
     @include container(320px);
+    overflow: hidden;
   }
   .page-photoblock__item {
     padding-top: 22px;
+    position: relative;
+  }
+  .page-photoblock__item::before {
+    content: "";
+    width: 200vw;
+    height: 1px;
+    background: $linegray;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    z-index: 10;
   }
   .page-photoblock__center {
     display: flex;
@@ -28,7 +41,7 @@
   .page-photoblock__wrapper {
     display: flex;
     padding-top: 23px;
-    padding-bottom: 23px;
+    padding-bottom: 20px;
     flex-direction: column;
   }
   @media (min-width: 768px) {
