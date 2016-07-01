@@ -507,10 +507,10 @@ body {
     width: 100%;
     margin: auto;
     background-color: #fff;
-    padding-top: 45px;
+    padding-top: 30px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 33px; }
+    padding-bottom: 26px; }
 
   .page-welcomemessage__title {
     width: 310px;
@@ -519,9 +519,21 @@ body {
     margin-bottom: 31px;
     font-weight: bold; }
 
+  .page-welcomemessage__title::before {
+    content: "";
+    width: 320px;
+    height: 1px;
+    background: #e5e5e5;
+    display: block;
+    position: absolute;
+    bottom: 2%;
+    z-index: 10; }
+
   .page-welcomemessage__text {
     font-size: 14px;
-    line-height: 24px; }
+    line-height: 24px;
+    width: 96%;
+    margin: auto; }
 
   .page-photoblock {
     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(0, 0, 0, 0.15);
@@ -724,10 +736,11 @@ body {
     flex-wrap: wrap; }
 
   .page-formblock__item {
+    padding: 0;
+    margin: 0;
     width: 100%;
     position: relative;
-    padding-bottom: 20px;
-    padding-top: 36px; }
+    padding-top: 18px; }
 
   .page-formblock__item::before {
     content: "";
@@ -740,6 +753,9 @@ body {
     left: -50%;
     z-index: 10; }
 
+  .page-formblock__item--personaldata::before {
+    display: none; }
+
   .page-formblock__title {
     display: flex;
     justify-content: center;
@@ -751,7 +767,12 @@ body {
     font-family: PTsans Bold; }
 
   .page-formblock__item--contacts {
-    position: relative; }
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 18px; }
+
+  .page-formblock__item--impression {
+    padding-top: 30px; }
 
   .page-formblock__contactwrap {
     margin-bottom: 17%; }
@@ -800,7 +821,13 @@ body {
     line-height: 26px; }
 
   .page-formblock__label--long {
-    margin-left: 5%; }
+    margin-left: 7%; }
+
+  .page-formblock__item--landmarks {
+    padding-top: 30px; }
+
+  .page-forblock__group--big {
+    width: 103%; }
 
   .page-formblock__icon {
     position: absolute;
@@ -897,6 +924,12 @@ body {
   .page-formblock__item--personaldata .page-formblock__title--tablet {
     display: none; }
 
+  .page-formblock__label--desktop {
+    display: none; }
+
+  .page-formblock__item--emotions {
+    padding-top: 30px; }
+
   .page-form__wrap {
     width: 100%;
     max-height: 144px;
@@ -912,7 +945,8 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
-    line-height: 26px; }
+    line-height: 26px;
+    cursor: pointer; }
 
   .page-form__requiredfields {
     display: none;
@@ -1318,6 +1352,9 @@ body {
     line-height: 26px;
     margin-bottom: 30px; }
 
+  .page-welcomemessage__title::before {
+    display: none; }
+
   .page-welcomemessage__text {
     width: 65%;
     margin: auto;
@@ -1459,9 +1496,22 @@ body {
     flex-wrap: wrap;
     padding-bottom: 50px; }
 
+  .page-formblock__group--checked:nth-child(1) {
+    order: 1; }
+
+  .page-formblock__group--checked:nth-child(2) {
+    order: 3; }
+
+  .page-formblock__group--checked:nth-child(3) {
+    order: 2; }
+
+  .page-formblock__group--checked:nth-child(4) {
+    order: 4; }
+
   .page-formblock__item {
     width: 50%;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    padding-top: 35px; }
 
   .page-formblock__item--personaldata .page-formblock__title--desktop {
     display: none; }
@@ -1495,7 +1545,7 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 54px;
+    padding-top: 31px;
     position: relative; }
 
   .page-formblock__item--contacts .page-formblock__title {
@@ -1528,7 +1578,7 @@ body {
     background: #eeeeee;
     position: absolute;
     box-sizing: border-box;
-    top: 100px; }
+    top: 81px; }
 
   .page-formblock__title span {
     width: 53%;
@@ -1678,9 +1728,8 @@ body {
     margin: 0;
     width: 97%;
     height: 22px;
-    margin-top: 6%;
+    margin-top: 2%;
     padding-top: 1.5%;
-    margin-left: 3%;
     padding-left: 3%;
     font-size: 18px; }
 
@@ -1726,8 +1775,7 @@ body {
     width: 324px;
     margin-top: 50px;
     padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 3%; }
+    padding-bottom: 20px; }
 
   .page-form__wrap {
     display: flex;
@@ -2103,11 +2151,14 @@ body {
     margin-left: 0; }
 
   .page-formblock__item--emotions .page-formblock__title::before {
-    top: 43; }
+    top: 43px; }
 
   .page-formblock__textarea {
     margin-top: 1%;
     margin-left: 0; }
+
+  .page-formblock__item--contacts .page-formblock__title::before {
+    top: 83px; }
 
   .page-form__btn {
     width: 50%;

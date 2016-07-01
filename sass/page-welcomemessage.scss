@@ -2,10 +2,11 @@
   .page-welcomemessage {
     box-shadow: -2px 2px 2px rgba(0, 0, 0, .15), 2px 2px 2px rgba(0, 0, 0, .15);
     @include container(320px);
-    padding-top: 45px;
+    padding-top: 30px;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 33px;
+    padding-bottom: 26px;
+
   }
   .page-welcomemessage__title {
     width: 310px;
@@ -13,10 +14,24 @@
     line-height: 26px;
     margin-bottom: 31px;
     font-weight: bold;
+    &::before{
+      content: "";
+width: 320px;
+height: 1px;
+background: #e5e5e5;
+display: block;
+position: absolute;
+bottom: 2%;
+
+z-index: 10;
+    }
   }
   .page-welcomemessage__text {
     font-size: 14px;
     line-height: 24px;
+    width: 96%;
+    margin: auto;
+
   }
 }
 @media (min-width: 768px) {
@@ -33,6 +48,9 @@
     font-size: 30px;
     line-height: 26px;
     margin-bottom: 30px;
+    &::before{
+      display: none;
+    }
   }
   .page-welcomemessage__text {
     width: 65%;

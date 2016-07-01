@@ -15,6 +15,7 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
+    cursor: pointer;
   }
   .page-form__requiredfields {
     display: none;
@@ -29,7 +30,6 @@
     margin-top: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 3%;
   }
   .page-form__wrap {
     display: flex;
