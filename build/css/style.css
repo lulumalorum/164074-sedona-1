@@ -516,7 +516,7 @@ body {
     width: 310px;
     font-size: 18px;
     line-height: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 31px;
     font-weight: bold; }
 
   .page-welcomemessage__text {
@@ -724,8 +724,10 @@ body {
     flex-wrap: wrap; }
 
   .page-formblock__item {
+    width: 100%;
     position: relative;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-top: 36px; }
 
   .page-formblock__item::before {
     content: "";
@@ -805,10 +807,6 @@ body {
     top: 0;
     right: -6%; }
 
-  .page-formblock__item {
-    width: 100%;
-    padding-top: 50px; }
-
   .page-formblock__textarea {
     width: 95%;
     padding-left: 5%;
@@ -816,7 +814,7 @@ body {
     margin: auto;
     background: #eeeeee;
     border: none;
-    min-height: 160px;
+    min-height: 150px;
     padding-top: 18px;
     font-size: 18px;
     line-height: 26px;
@@ -895,6 +893,9 @@ body {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: bold; }
+
+  .page-formblock__item--personaldata .page-formblock__title--tablet {
+    display: none; }
 
   .page-form__wrap {
     width: 100%;
@@ -1155,7 +1156,7 @@ body {
     width: 100%;
     margin: auto;
     background-color: #fff;
-    padding-top: 40px;
+    padding-top: 44px;
     text-align: center;
     display: flex;
     flex-wrap: wrap; }
@@ -1290,7 +1291,6 @@ body {
     background-image: url("../img/bg-back-desktop@1x.jpg"); }
 
   .page-title__imgsedona {
-    top: 50%;
     height: 81px;
     width: 463px; }
 
@@ -1306,7 +1306,7 @@ body {
     width: 100%;
     margin: auto;
     background-color: #fff;
-    padding-top: 110px;
+    padding-top: 74px;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 33px; }
@@ -1316,10 +1316,10 @@ body {
     margin: auto;
     font-size: 30px;
     line-height: 26px;
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
 
   .page-welcomemessage__text {
-    width: 41%;
+    width: 65%;
     margin: auto;
     font-size: 14px;
     line-height: 24px; }
@@ -1453,7 +1453,7 @@ body {
     font-size: 18px; }
 
   .page-formblock__wrap {
-    width: 86.4%;
+    width: 84%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -1463,15 +1463,23 @@ body {
     width: 50%;
     padding-bottom: 0; }
 
+  .page-formblock__item--personaldata .page-formblock__title--desktop {
+    display: none; }
+
+  .page-formblock__item--personaldata .page-formblock__title--tablet {
+    display: flex;
+    padding-right: 11%;
+    padding-bottom: 12%; }
+
   .page-formblock__item--personaldata::before {
     content: "";
     display: block;
     width: 1px;
-    height: 80%;
+    height: 90%;
     background: #eeeeee;
     position: absolute;
     box-sizing: border-box;
-    top: 14%;
+    top: 10%;
     left: 0; }
 
   .page-formblock__item--contacts {
@@ -1487,12 +1495,14 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 54px;
     position: relative; }
 
   .page-formblock__item--contacts .page-formblock__title {
     width: 100%;
     margin: auto;
-    padding-bottom: 40px; }
+    padding-top: 31px;
+    padding-bottom: 24px; }
 
   .page-formblock__item--contacts .page-formblock__title::before {
     content: "";
@@ -1502,11 +1512,13 @@ body {
     background: #eeeeee;
     position: absolute;
     box-sizing: border-box;
-    top: 63px; }
+    top: 80px; }
 
   .page-formblock__item--landmarks .page-formblock__title {
     width: 100%;
-    margin: auto; }
+    margin: auto;
+    padding-top: 13px;
+    margin-top: 12px; }
 
   .page-formblock__item--landmarks .page-formblock__title::before {
     content: "";
@@ -1516,7 +1528,7 @@ body {
     background: #eeeeee;
     position: absolute;
     box-sizing: border-box;
-    top: 80px; }
+    top: 100px; }
 
   .page-formblock__title span {
     width: 53%;
@@ -1538,7 +1550,8 @@ body {
     flex-wrap: wrap; }
 
   .page-formblock__item--contacts .page-formblock__label--long {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 1%; }
 
   .page-formblock__item--emotions {
     position: relative;
@@ -1556,7 +1569,7 @@ body {
     background: #eeeeee;
     position: absolute;
     box-sizing: border-box;
-    top: 63px; }
+    top: 47px; }
 
   .page-formblock__title {
     width: 96%;
@@ -1586,6 +1599,9 @@ body {
     display: flex;
     position: relative;
     width: 100%; }
+
+  .page-formblock__item--landmarks .page-formblock__group3 {
+    margin-left: 119px; }
 
   .page-formblock__group3 {
     display: flex;
@@ -1635,15 +1651,36 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
-    margin-bottom: 21px;
+    margin-top: 21px;
     width: 80%;
     justify-content: flex-end; }
+
+  .page-formblock__item--impression .page-formblock__group {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    width: 90%;
+    justify-content: flex-start; }
+
+  .page-formblock__item--impression .page-formblock__title {
+    margin-bottom: 14%; }
+
+  .page-formblock__contactwrap {
+    margin-left: 3%; }
+
+  .page-formblock__contactwrap:last-child {
+    margin-top: -1%;
+    margin-left: 3%; }
 
   .page-formblock__textarea {
     padding: 0;
     margin: 0;
     width: 97%;
-    padding-top: 2%;
+    height: 22px;
+    margin-top: 6%;
+    padding-top: 1.5%;
+    margin-left: 3%;
     padding-left: 3%;
     font-size: 18px; }
 
@@ -1681,12 +1718,16 @@ body {
     text-transform: capitalize;
     font-size: 18px; }
 
+  .page-formblock__label--desktop {
+    display: none; }
+
   .page-form__btn {
     margin: 0;
     width: 324px;
     margin-top: 50px;
     padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    margin-left: 3%; }
 
   .page-form__wrap {
     display: flex;
@@ -1698,7 +1739,7 @@ body {
 
   .page-form__requiredfields {
     display: flex;
-    width: 50%;
+    width: 46%;
     justify-content: flex-end; }
 
   .page-map {
@@ -1819,11 +1860,11 @@ body {
     width: 95.4%; }
 
   .page-footer__copyright {
-    width: 47.33%; }
+    width: 50.33%; }
 
   .page-footer__visit {
     width: 41%;
-    padding-left: 56px; }
+    padding-left: 84px; }
 
   .page-foundhotel {
     position: relative;
@@ -1872,7 +1913,7 @@ body {
     background-image: url("../img/bg-map-desktop@1x.jpg"); }
 
   .page-social {
-    width: 14.33%; }
+    width: 15.1%; }
 
   .page-title {
     position: relative;
@@ -1887,7 +1928,11 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: auto;
-    background-color: #fff; }
+    background-color: #fff;
+    padding-top: 110px; }
+
+  .page-welcomemessage__text {
+    width: 41%; }
 
   .page-photoblock {
     position: relative;
@@ -1933,30 +1978,73 @@ body {
     margin: auto;
     background-color: #fff; }
 
+  .page-formblock__wrap {
+    width: 80%; }
+
+  .page-formblock__item {
+    padding-top: 30px; }
+
+  .page-formblock__item--personaldata .page-formblock__title--desktop {
+    display: flex; }
+
+  .page-formblock__item--impression .page-formblock__group {
+    width: 80%;
+    margin-top: 23px; }
+
+  .page-formblock__item--personaldata .page-formblock__group {
+    width: 85%;
+    margin-top: 12px; }
+
+  .page-formblock__item--contacts .page-formblock__title {
+    padding-top: 41px;
+    padding-bottom: 40px; }
+
   .page-formblock__item--contacts {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 48px; }
+    margin-bottom: 25px; }
 
-  .page-formblock__title {
-    width: 80%; }
+  .page-formblock__item--impression .page-formblock__title {
+    padding-left: 16%;
+    margin-bottom: 6%; }
+
+  .page-formblock__item--personaldata .page-formblock__title {
+    padding-left: 75px; }
 
   .page-formblock__contactwrap {
     flex-wrap: nowrap;
     width: 50%; }
 
   .page-formblock__item--contacts .page-formblock__label--long {
-    width: 57%; }
+    width: 57%;
+    padding-bottom: 0; }
 
-  .page-formblock__label--mail {
-    padding-left: 10%; }
+  .page-formblock__contactwrap {
+    margin-left: 0; }
+
+  .page-formblock__contactwrap:last-child {
+    margin-top: 3.5%;
+    display: flex;
+    margin-left: 5%; }
+
+  .page-formblock__contactwrap--tel {
+    width: 42.5%;
+    margin-top: 3.5%; }
+
+  .page-formblock__label--mobile {
+    display: none; }
+
+  .page-formblock__label--desktop {
+    display: inline-flex;
+    width: 22%; }
 
   .page-formblock__field--phone {
     width: 84%; }
 
   .page-formblock__icon {
     right: 11%;
-    left: 236px; }
+    width: 59px;
+    left: 252px; }
 
   .page-formblock__item--personaldata {
     width: 50%;
@@ -1972,28 +2060,60 @@ body {
 
   .page-formblock__group3 {
     margin: 0;
-    padding: 0;
+    padding-top: 23px;
+    margin-top: -2%;
+    margin-bottom: 2%;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between; }
 
   .page-formblock__group3 .page-formblock__group:last-child {
-    flex-shrink: 1.2; }
+    flex-shrink: 1.12;
+    order: 4; }
 
   .page-formblock__error {
     position: absolute;
-    top: 55%;
-    left: 21%; }
+    top: 61%;
+    left: 10%; }
 
   .page-formblock__title span {
     width: 34%; }
+
+  .page-formblock__title {
+    padding-bottom: 4%; }
 
   .page-formblock__label--bold {
     text-transform: capitalize;
     font-size: 18px; }
 
+  .page-formblock__item--personaldata .page-formblock__title--tablet {
+    display: none; }
+
+  .page-formblock__label--desktop {
+    display: flex; }
+
+  .page-formblock__item--landmarks {
+    padding-top: 0; }
+
+  .page-formblock__item--landmarks .page-formblock__title::before {
+    top: 50px; }
+
+  .page-formblock__item--landmarks .page-formblock__group3 {
+    margin-left: 0; }
+
+  .page-formblock__item--emotions .page-formblock__title::before {
+    top: 43; }
+
+  .page-formblock__textarea {
+    margin-top: 1%;
+    margin-left: 0; }
+
   .page-form__btn {
+    width: 50%;
+    margin-left: 0; }
+
+  .page-form__requiredfields {
     width: 50%; }
 
   .page-map {

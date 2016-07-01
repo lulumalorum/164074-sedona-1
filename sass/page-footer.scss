@@ -62,7 +62,7 @@
 @media (min-width: 768px) {
   .page-footer {
     @include container(768px);
-    padding-top: 40px;
+    padding-top: 44px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -112,10 +112,10 @@
     width: 95.4%;
   }
   .page-footer__copyright {
-    width: 47.33%;
+    width: 50.33%;
   }
   .page-footer__visit {
     width: 41%;
-    padding-left: 56px;
+    padding-left: 84px;
   }
 }

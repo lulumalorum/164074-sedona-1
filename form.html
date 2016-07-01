@@ -171,7 +171,8 @@
       <div class="page-formblock">
         <div class="page-formblock__wrap">
           <div class="page-formblock__item  page-formblock__item--personaldata">
-            <span class="page-formblock__title">Представьтесь, пожалуйста:</span>
+            <span class="page-formblock__title  page-formblock__title--desktop">Представьтесь,пожалуйста:</span>
+            <span class="page-formblock__title  page-formblock__title--tablet">Представьтесь:</span>
             <div class="page-formblock__group">
               <label class="page-formblock__label" for="name">Имя</label>
               <input class="page-formblock__field  page-formblock__field--superlong" type="text" name="firstname" id="name" value="Петр">
@@ -187,9 +188,10 @@
           </div>
           <div class="page-formblock__item  page-formblock__item--contacts">
             <span class="page-formblock__title  page-formblock__title--center"><span>Контактная информация:</span></span>
-            <div class="page-formblock__contactwrap">
+            <div class="page-formblock__contactwrap page-formblock__contactwrap--tel">
               <span class="page-formblock__error">Ошибка, перепроверьте номер</span>
-              <label class="page-formblock__label  page-formblock__label--long" for="tel">Контактный телефон:</label>
+              <label class="page-formblock__label  page-formblock__label--desktop" for="tel">телефон:</label>
+              <label class="page-formblock__label  page-formblock__label--long page-formblock__label--mobile" for="tel">Контактный телефон:</label>
               <div class="page-formblock__group2">
                 <input class="page-formblock__field  page-formblock__field--long  page-formblock__field--phone" type="tel" name="phonenumber" id="tel" value="Введите телефон">
                 <div class="page-formblock__icon  page-formblock__icon--tel">

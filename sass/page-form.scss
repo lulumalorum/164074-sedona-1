@@ -29,6 +29,7 @@
     margin-top: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 3%;
   }
   .page-form__wrap {
     display: flex;
@@ -40,12 +41,16 @@
   }
   .page-form__requiredfields {
     display: flex;
-    width: 50%;
+    width: 46%;
     justify-content: flex-end;
   }
 }
 @media (min-width: 1200px) {
   .page-form__btn {
+    width: 50%;
+    margin-left: 0;
+  }
+  .page-form__requiredfields {
     width: 50%;
   }
 }
