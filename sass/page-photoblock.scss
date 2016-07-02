@@ -7,6 +7,9 @@
   .page-photoblock__item {
     padding-top: 22px;
     position: relative;
+    &::before {
+      content: none;
+    }
   }
   .page-photoblock__item::before {
     content: "";
@@ -58,7 +61,7 @@
       padding-top: 0;
       background-color: $darkgray;
       margin: 0;
-      &::before{
+      &::before {
         display: none;
       }
     }

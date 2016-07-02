@@ -33,6 +33,12 @@
       display: none;
     }
   }
+  .page-formblock__item--personaldata .page-formblock__label {
+    width: 45%;
+  }
+  .page-formblock__item--personaldata .page-formblock__label--first {
+    width: 20%;
+  }
   .page-formblock__title {
     display: flex;
     justify-content: center;
@@ -309,6 +315,12 @@
   .page-formblock__item--contacts {
     position: relative;
     width: 100%;
+  }
+  .page-formblock__item--personaldata .page-formblock__label {
+    width: 30%;
+  }
+  .page-formblock__item--personaldata .page-formblock__label--first {
+    width: 15%;
   }
   .page-formblock__item--impression {
     order: -1;
@@ -731,5 +743,11 @@
   }
   .page-formblock__item--contacts .page-formblock__title::before {
     top: 83px;
+  }
+  .page-formblock__item--personaldata .page-formblock__label {
+    width: 25%;
+  }
+  .page-formblock__item--personaldata .page-formblock__label--first {
+    width: 11%;
   }
 }
