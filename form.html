@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -191,7 +190,7 @@
             <div class="page-formblock__contactwrap page-formblock__contactwrap--tel">
               <span class="page-formblock__error">Ошибка, перепроверьте номер</span>
               <label class="page-formblock__label  page-formblock__label--desktop" for="tel">телефон:</label>
-              <label class="page-formblock__label  page-formblock__label--long page-formblock__label--mobile" for="tel">Контактный телефон:</label>
+              <label class="page-formblock__label  page-formblock__label--long  page-formblock__label--mobile" for="tel">Контактный телефон:</label>
               <div class="page-formblock__group2">
                 <input class="page-formblock__field  page-formblock__field--long  page-formblock__field--phone" type="tel" name="phonenumber" id="tel" value="Введите телефон">
                 <div class="page-formblock__icon  page-formblock__icon--tel">
@@ -231,21 +230,28 @@
               </div>
               <div class="page-formblock__group">
                 <input class="page-formblock__checkbox" type="checkbox" name="option5" id="op5" value="park" checked>
-                <label class="page-formblock__label page-formblock__label--bold" for="op5">Слайд-парк</label>
+                <label class="page-formblock__label  page-formblock__label--bold" for="op5">Слайд-парк</label>
               </div>
               <div class="page-formblock__group">
                 <input class="page-formblock__checkbox" type="checkbox" name="option6" id="op6" value="mountain">
-                <label class="page-formblock__label page-formblock__label--bold" for="op6">Гора-колокол</label>
+                <label class="page-formblock__label  page-formblock__label--bold" for="op6">Гора-колокол</label>
               </div>
               <div class="page-formblock__group">
                 <input class="page-formblock__checkbox" type="checkbox" name="option7" id="op7" value="rock" checked>
-                <label class="page-formblock__label page-formblock__label--bold" for="op7">Красные скалы</label>
+                <label class="page-formblock__label  page-formblock__label--bold" for="op7">Красные скалы</label>
               </div>
             </div>
           </div>
           <div class="page-formblock__item  page-formblock__item--emotions">
             <span class="page-formblock__title  page-formblock__title--center"><span>Опишите свои эмоции:</span></span>
             <textarea class="page-formblock__textarea" name="text">Опишите подробно все свои восторги</textarea>
+            <div class="page-formblock__popuperror">
+              <span class="page-formblock__title  page-formblock__title--error">Что-то пошло не так!</span>
+              <p class="page-formblock__text  page-formblock__text--popup">
+                Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+              </p>
+              <button class="page-formblock__btn  page-formblock__btn--popup" type="submit">Ок</button>
+            </div>
           </div>
           <div class="page-form__wrap">
             <button class="page-form__btn" type="submit">Отправить отзыв</button>
@@ -260,14 +266,14 @@
       <a class="page-footer__visit" href="#">#Visitsedona</a>
       <div class="page-social">
         <a class="page-social__icon" href="#">
-          <svg class="page-social__svg page-social__svg--twitter">
+          <svg class="page-social__svg  page-social__svg--twitter">
             <use xlink:href="#icon-twitter" />
           </svg>Twitter</a>
         <a class="page-social__icon" href="#">
-          <svg class="page-social__svg page-social__svg--facebook">
+          <svg class="page-social__svg  page-social__svg--facebook">
             <use xlink:href="#icon-facebook" /></svg>Facebook</a>
         <a class="page-social__icon" href="#">
-          <svg class="page-social__svg page-social__svg--youtube">
+          <svg class="page-social__svg  page-social__svg--youtube">
             <use xlink:href="#icon-youtube" /></svg>Youtube</a>
       </div>
       <div class="page-footer__copyright">
@@ -275,7 +281,9 @@
         <a class="page-footer__imgdevelopers" href="#"><svg class="page-footer__svg">
           <use xlink:href="#logo-htmlacademy" /></svg>HtmlAcademy</a>
       </div>
+      <div class="page-footer__popupsucces">
+        <span class="page-footer__title">Ваш отзыв отправлен!</span>
+      </div>
     </div>
-  </footer>
 </body>
 </html>

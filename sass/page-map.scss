@@ -1,5 +1,8 @@
 @media (min-width: 320px) {
   .page-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include container(320px);
     min-height: 352px;
     background-image: url("../img/bg-map-mobile@1x.jpg");
@@ -7,6 +10,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: -2px 2px 2px rgba(0, 0, 0, .15), 2px 2px 2px rgba(0, 0, 0, .15);
+  }
+  .page-map__marker {
+    width: 33px;
+    height: 29px;
   }
 }
 @media (min-width: 768px) {

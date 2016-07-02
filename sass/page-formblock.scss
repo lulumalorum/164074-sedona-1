@@ -207,6 +207,51 @@
   .page-formblock__item--emotions {
     padding-top: 30px;
   }
+  .page-formblock__popuperror {
+    display: block;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    background-color: $white;
+    min-height: 330px;
+    width: 400px;
+    box-shadow: 0 0 7px 5px rgba(221, 221, 221, 0.32);
+  }
+  .page-formblock__item--emotions .page-formblock__title--error {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 46px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    &::before {
+      display: none;
+    }
+  }
+  .page-formblock__text--popup {
+    line-height: 24px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 43px;
+  }
+  .page-formblock__btn {
+    border: none;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    min-height: 58px;
+    color: $white;
+    background-color: $blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
+  }
 }
 @media (min-width: 768px) {
   .page-formblock {
@@ -499,6 +544,51 @@
   }
   .page-formblock__label--desktop {
     display: none;
+  }
+  .page-formblock__popuperror {
+    display: block;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: -3%;
+    transform: translateX(-50%);
+    background-color: $white;
+    min-height: 348px;
+    width: 400px;
+    box-shadow: 0 0 7px 5px rgba(221, 221, 221, 0.32);
+  }
+  .page-formblock__item--emotions .page-formblock__title--error {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 66px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    &::before {
+      display: none;
+    }
+  }
+  .page-formblock__text--popup {
+    line-height: 24px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 43px;
+  }
+  .page-formblock__btn {
+    border: none;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    min-height: 58px;
+    color: $white;
+    background-color: $blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
   }
 }
 @media (min-width: 1200px) {

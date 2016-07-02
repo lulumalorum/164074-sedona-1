@@ -297,6 +297,26 @@ body {
     width: 30px;
     height: 35px; }
 
+  .page-footer__popupsucces {
+    width: 98%;
+    min-height: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    transform: translateX(-50%);
+    box-shadow: 0 0 7px 5px rgba(221, 221, 221, 0.32);
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center; }
+
+  .page-footer__title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase; }
+
   .page-foundhotel {
     position: relative;
     max-width: 320px;
@@ -306,6 +326,10 @@ body {
     background-color: #fefefe;
     padding-bottom: 41px;
     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(0, 0, 0, 0.15); }
+
+  .page-foundhotel a {
+    text-decoration: none;
+    color: #fefefe; }
 
   .page-foundhotel__button {
     background-color: #81b3d2;
@@ -414,6 +438,9 @@ body {
     text-align: center; }
 
   .page-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     max-width: 320px;
     width: 100%;
@@ -425,6 +452,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(0, 0, 0, 0.15); }
+
+  .page-map__marker {
+    width: 33px;
+    height: 29px; }
 
   .page-social {
     display: flex;
@@ -930,6 +961,51 @@ body {
   .page-formblock__item--emotions {
     padding-top: 30px; }
 
+  .page-formblock__popuperror {
+    display: block;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    background-color: #fefefe;
+    min-height: 330px;
+    width: 400px;
+    box-shadow: 0 0 7px 5px rgba(221, 221, 221, 0.32); }
+
+  .page-formblock__item--emotions .page-formblock__title--error {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 46px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px; }
+
+  .page-formblock__item--emotions .page-formblock__title--error::before {
+    display: none; }
+
+  .page-formblock__text--popup {
+    line-height: 24px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 43px; }
+
+  .page-formblock__btn {
+    border: none;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    min-height: 58px;
+    color: #fefefe;
+    background-color: #81b3d2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer; }
+
   .page-form__wrap {
     width: 100%;
     max-height: 144px;
@@ -954,6 +1030,9 @@ body {
     text-transform: uppercase; }
 
   .page-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     max-width: 320px;
     width: 100%;
@@ -964,7 +1043,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(0, 0, 0, 0.15); } }
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(0, 0, 0, 0.15); }
+
+  .page-map__marker {
+    width: 33px;
+    height: 29px; } }
 
 @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
 
@@ -1229,6 +1312,11 @@ body {
     background-position: center; }
 
   .page-footer__imgdevelopers span {
+    display: none; }
+
+  .page-footer__popupsucces {
+    width: 441px;
+    display: flex;
     display: none; }
 
   .page-foundhotel {
@@ -1770,6 +1858,51 @@ body {
   .page-formblock__label--desktop {
     display: none; }
 
+  .page-formblock__popuperror {
+    display: block;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: -3%;
+    transform: translateX(-50%);
+    background-color: #fefefe;
+    min-height: 348px;
+    width: 400px;
+    box-shadow: 0 0 7px 5px rgba(221, 221, 221, 0.32); }
+
+  .page-formblock__item--emotions .page-formblock__title--error {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 66px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px; }
+
+  .page-formblock__item--emotions .page-formblock__title--error::before {
+    display: none; }
+
+  .page-formblock__text--popup {
+    line-height: 24px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 43px; }
+
+  .page-formblock__btn {
+    border: none;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    min-height: 58px;
+    color: #fefefe;
+    background-color: #81b3d2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer; }
+
   .page-form__btn {
     margin: 0;
     width: 324px;
@@ -1913,6 +2046,15 @@ body {
   .page-footer__visit {
     width: 41%;
     padding-left: 84px; }
+
+  .page-footer__popupsucces {
+    width: 641px;
+    min-height: 122px;
+    display: flex;
+    display: none; }
+
+  .page-footer__title {
+    font-size: 30px; }
 
   .page-foundhotel {
     position: relative;
