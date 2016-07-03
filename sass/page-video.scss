@@ -101,6 +101,12 @@
     fill: $darkgray2;
     height: 64px;
   }
+  .page-video__icon:hover {
+    fill: $video1;
+  }
+  .page-video__icon:focus {
+    fill: $video2;
+  }
   .page-video__icon--reload {
     width: 19px;
   }

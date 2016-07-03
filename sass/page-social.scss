@@ -12,6 +12,7 @@
   .page-social__icon {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 46px;
     height: 48px;
     background-color: $blue;
@@ -23,9 +24,9 @@
   }
   .page-social__svg {
     fill: $white;
-    &:focus {
-      fill: $darkblue;
-    }
+  }
+  .page-social__icon:focus svg {
+    fill: $menutext;
   }
   .page-social__svg--twitter {
     width: 21px;

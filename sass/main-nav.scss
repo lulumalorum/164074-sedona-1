@@ -37,7 +37,10 @@
       justify-content: center;
       color: $white;
       &:hover {
-        color: $blue;
+        background-color: $darkblue2;
+      }
+      &:focus {
+        background-color: $darkbluemenu;
       }
     }
     .main-nav__item:nth-child(1) {
@@ -81,6 +84,9 @@
     a {
       text-decoration: none;
       color: #ffffff;
+      &:focus {
+        color: $menutext;
+      }
     }
   }
 }
@@ -109,6 +115,12 @@
       color: #000;
       border-bottom: none;
       border-top: none;
+      &:hover {
+        background-color: $white;
+      }
+      &:focus {
+        background-color: $white;
+      }
     }
     .main-nav__item:nth-child(1) {
       order: 1;
@@ -131,6 +143,12 @@
     a {
       text-decoration: none;
       color: #000;
+      &:hover {
+        color: $blue;
+      }
+      &:focus {
+        color: $graymenu;
+      }
     }
   }
   .main-nav__toogle {

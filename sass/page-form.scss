@@ -16,6 +16,14 @@
     font-size: 20px;
     line-height: 26px;
     cursor: pointer;
+    &:hover {
+      background-color: $darkblue2;
+    }
+  }
+  .page-form__btn:focus {
+    background-color: $darkbluemenu;
+    color: $menutext;
+    outline: none;
   }
   .page-form__requiredfields {
     display: none;
